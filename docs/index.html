@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Radar</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --card: #fff; --ink: #1a1a19; --muted: #6b6b66;
+    --line: #e3e3df; --accent: #1c6b52;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16171a; --card: #1e1f23; --ink: #e9e9e6; --muted: #9b9b95;
+      --line: #303138; --accent: #6ec7a4;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 1.25rem 1rem 3rem; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 44rem; margin-inline: auto;
+  }
+  header { margin-bottom: 1.5rem; }
+  h1 { font-size: 1.35rem; margin: 0 0 .2rem; letter-spacing: -.01em; }
+  .sub { color: var(--muted); font-size: .85rem; }
+  article {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 1rem 1.1rem; margin-bottom: .9rem;
+  }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: .5rem; align-items: center;
+    font-size: .78rem; color: var(--muted); margin-bottom: .45rem;
+  }
+  .score {
+    color: #fff; font-weight: 600; border-radius: 999px;
+    padding: .1rem .55rem; font-size: .74rem;
+  }
+  mark {
+    background: rgba(255, 213, 74, .38); color: inherit;
+    padding: .05em .1em; border-radius: 3px;
+  }
+  @media (prefers-color-scheme: dark) {
+    mark { background: rgba(255, 213, 74, .22); }
+  }
+  .notes { list-style: none; padding: 0; margin: 0 0 .6rem; }
+  .notes li {
+    font-size: .85rem; color: var(--muted); padding-left: .9rem;
+    position: relative; margin-bottom: .18rem;
+  }
+  .notes li::before {
+    content: ""; position: absolute; left: 0; top: .55em;
+    width: .35rem; height: .35rem; border-radius: 50%; background: var(--accent);
+  }
+  .readfirst {
+    font-size: .82rem; color: var(--muted); margin: .1rem 0 .6rem;
+  }
+  .readfirst b { color: var(--ink); font-weight: 600; }
+  .tag {
+    display: inline-block; border: 1px solid var(--line); border-radius: 6px;
+    padding: .05rem .4rem; margin: .12rem .25rem .12rem 0; color: var(--ink);
+  }
+  h2 { font-size: 1.02rem; line-height: 1.35; margin: 0 0 .5rem; }
+  h2 a { color: var(--ink); text-decoration: none; }
+  h2 a:hover { text-decoration: underline; }
+  .why { margin: 0 0 .6rem; }
+  details summary {
+    cursor: pointer; color: var(--accent); font-size: .85rem;
+    padding: .4rem 0; min-height: 44px; display: flex; align-items: center;
+  }
+  details p { color: var(--muted); font-size: .9rem; margin: 0 0 .4rem; }
+  .empty { color: var(--muted); padding: 2rem 0; text-align: center; }
+  footer { color: var(--muted); font-size: .78rem; margin-top: 2rem;
+            border-top: 1px solid var(--line); padding-top: .8rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Paper Radar</h1>
+  <div class="sub">Nothing scored 7+ in the last 3 days &mdash; showing the 3 best available</div>
+</header>
+<article>
+  <div class="meta"><span class="score" style="background:hsl(77, 62%, 35%)">6/10</span><span>PubMed</span><span>2026-09-09</span></div>
+  <h2><a href="https://pubmed.ncbi.nlm.nih.gov/42711648/">Breast Cancer Recurrence Status Assessment in 5 Years Using Multimodal Integrated Learning: A Feasibility Study.</a></h2>
+  <p class="why">Deep learning multimodal outcome prediction in oncology is adjacent to clinical trial outcome prediction but focuses on recurrence, not trial-specific endpoints or drug response.</p>
+  <p class="readfirst"><b>Start with:</b> <span class="tag">Methods: multimodal integration model architecture</span><span class="tag">Results: performance metrics table</span><span class="tag">Limitations</span></p>
+  <ul class="notes">
+    <li>core multimodal DL prediction task</li>
+    <li>novel fusion architecture detail</li>
+    <li>key performance metrics</li>
+  </ul>
+  <details><summary>Abstract &middot; 3 passages flagged</summary><p>Despite advances in breast cancer detection and treatment, recurrence after curative therapy continues to impact long-term survival and quality of life. Therefore, early identification of high-risk patients is crucial to guide personalized treatment and follow-up strategies. Although genomic assays provide valuable prognostic insights, their high cost and limited accessibility hinder widespread adoption in clinical practice. Recent machine learning or deep learning approaches leveraging clinical, imaging, or multimodal data have shown promise but do not reflect real-world clinical scenarios. This study proposes a <mark>deep learning-based multimodal framework for predicting 5-year breast cancer recurrence using routinely collected clinical data</mark>. The framework consists of three main components. First, we adopted automated tumor segmentation with MedSAM to extract the tumor region from ultrasound images. The radiomics features are extracted from those tumor regions. Second, report features are extracted using a Med-Contrastive Pre-trained Transformers (MedCPT)-based approach incorporating predefined, clinically informed queries. Third, a multimodal integration model jointly processes image, radiomics, clinical features, and report features through modality-specific branches. The image branch employs the Ultrasound Foundation Model (USFM) as the backbone, while structured tabular data is processed using the FT-Transformer architecture. The features of all branches are fused using <mark>a mixture-of-experts (MoE)-based classifier, and the entire model is trained using a progressive fusion training strategy</mark>. Experimental results confirm the feasibility of using ultrasound images with tumor mask integration for recurrence prediction and demonstrate the additive value of integrating multiple data modalities through the proposed multimodal integration model. The final model for recurrence prediction <mark>achieved an AUC of 0.7540, accuracy of 74.61%, sensitivity of 70.41%, and specificity of 76.44%</mark>. This feasibility study&#x27;s findings underscore the potential of the proposed multimodal deep learning framework to provide accessible, accurate, and generalizable recurrence risk prediction using routinely available clinical data, potentially supporting more informed treatment decisions and personalized post-treatment monitoring in real-world clinical practice.</p><p>Ruey-Feng Chang, Hsiang-Wei Huang, Szu-Yen Kuo, Yan-Wei Lee, Ming-Yang Wang, Chiun-Sheng Huang</p></details>
+</article>
+<article>
+  <div class="meta"><span class="score" style="background:hsl(77, 62%, 35%)">6/10</span><span>PubMed</span><span>2026-09-08</span></div>
+  <h2><a href="https://pubmed.ncbi.nlm.nih.gov/42710027/">Precision Drug Discovery in the Era of Artificial Intelligence: A Critical Review.</a></h2>
+  <p class="why">Broad AI drug discovery review that includes a section on individualized drug response prediction, relevant but not focused on trial outcome prediction.</p>
+  <p class="readfirst"><b>Start with:</b> <span class="tag">Section on individualized drug response prediction</span><span class="tag">Discussion of persistent challenges: data bias and in silico-to-wet lab translation</span></p>
+  <ul class="notes">
+    <li>directly matches drug response prediction interest</li>
+    <li>relates to trial success/translational outcomes</li>
+  </ul>
+  <details><summary>Abstract &middot; 2 passages flagged</summary><p>Traditional drug development suffers from high costs, low success rates, and patient response variability. Precision drug discovery seeks to overcome these limitations by targeting specific genetic and molecular mechanisms but faces challenges in integrating cross-scale, multimodal biomedical data. Recent advances in artificial intelligence (AI), especially deep learning, provide powerful tools to navigate these complexities. This review surveys representative AI methods across four core stages of precision drug discovery: (a) target identification and validation using omics-, drug-, and structure-based approaches; (b) structure- and sequence-guided virtual screening of active compounds; (c) <mark>individualized drug response prediction integrating cell-line, single-cell, and multimodal data</mark>; and (d) <mark>AI-enabled toxicology and safety modeling to anticipate adverse liabilities and improve translational success</mark>. We further highlight a paradigm shift toward autonomous scientific agents capable of causal reasoning and end-to-end experimental guidance. Finally, we discuss persistent challenges, including data bias, limited interpretability, and in silico-to-wet lab translation.</p><p>Mengya Liu, Jiacheng Xiong, Mingyue Zheng</p></details>
+</article>
+<article>
+  <div class="meta"><span class="score" style="background:hsl(61, 64%, 34%)">5/10</span><span>PubMed</span><span>2026-09-06</span></div>
+  <h2><a href="https://pubmed.ncbi.nlm.nih.gov/42702361/">Machine Learning-Derived Immune Gene Signature Predicts Prognosis and Therapeutic Vulnerabilities in Multiple Myeloma.</a></h2>
+  <p class="why">Develops a prognostic immune gene signature with transcriptome-based drug-response prediction in myeloma, relevant to drug response prediction but not clinical trial outcome modeling.</p>
+  <p class="readfirst"><b>Start with:</b> <span class="tag">Methods: drug-response prediction pipeline</span><span class="tag">Results: validation cohort comparisons with IFM15/MRCIX6</span><span class="tag">Discussion: therapeutic vulnerability implications</span></p>
+  <ul class="notes">
+    <li>direct drug response prediction application</li>
+    <li>ML-derived biomarker, not trial outcome</li>
+    <li>specific predicted drug sensitivity classes</li>
+  </ul>
+  <details><summary>Abstract &middot; 3 passages flagged</summary><p>The immune microenvironment contributes substantially to the biological and clinical heterogeneity of multiple myeloma (MM), yet immune-related molecular biomarkers with reproducible prognostic value remain limited. Here, we developed <mark>a 12-gene immune-related gene signature (IRGS) using an integrative machine-learning framework</mark> and evaluated its prognostic performance across multiple MM cohorts. The IRGS consistently stratified overall survival and remained independently associated with outcome after adjustment for established clinical covariates. Its prognostic discrimination was comparable to that of IFM15 and generally exceeded that of MRCIX6 and a mitophagy-related signature across the evaluated validation datasets. Single-cell RNA sequencing further revealed marked cell type-dependent variation in the activity of the 12-gene module, with comparatively low activity in plasma cells and higher activity in several non-plasma compartments, indicating that the bulk-derived IRGS reflects a multicellular bone marrow transcriptional context rather than an exclusively malignant plasma cell intrinsic program. Somatic mutation analysis identified distinct mutational patterns between IRGS-defined groups, including relative enrichment of DIS3 mutations in the low-IRGS group and MUC16 mutations in the high-IRGS group, together with a modestly higher tumor mutational burden in low-IRGS patients. <mark>Transcriptome-based drug-response prediction further suggested differential therapeutic vulnerabilities</mark>, with <mark>high- and low-IRGS groups showing distinct predicted sensitivity patterns across apoptosis-, DNA damage-, BET-, checkpoint-, and replication-stress-related agents</mark>. Collectively, these findings define the IRGS as a complementary immune-associated molecular biomarker for prognostic stratification in MM and provide a framework linking prognosis with multicellular transcriptional context, somatic mutational characteristics, and candidate therapeutic vulnerabilities.</p><p>Kai Wang, Chenfei Zhao, Jingru Shi, Shiwei Liu, Yi Chen, Jujuan Wang, Zhengxu Sun, Sanmei Wang, Lei Fan, Jin Fan, Xiaoyan Qu</p></details>
+</article>
+<footer>Built 2026-09-09 18:03 &middot; claude-sonnet-5 &middot; keywords: clinical trial outcome prediction, trial success prediction, drug response prediction</footer>
+</body>
+</html>

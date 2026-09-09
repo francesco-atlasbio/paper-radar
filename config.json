@@ -1,0 +1,16 @@
+{
+  "keywords": [
+    "clinical trial outcome prediction",
+    "trial success prediction",
+    "drug response prediction"
+  ],
+  "keyword_match_ratio": 0.75,
+  "model": "claude-sonnet-5",
+  "lookback_days": 5,
+  "display_days": 3,
+  "score_threshold": 7,
+  "fallback_count": 3,
+  "max_papers_per_run": 60,
+  "cache_retention_days": 7,
+  "pubmed_field": "tiab"
+}
