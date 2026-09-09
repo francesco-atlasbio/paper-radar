@@ -1,0 +1,56 @@
+name: Daily paper radar
+
+on:
+  schedule:
+    # 06:00 UTC ogni giorno. GitHub puo' ritardare i cron nelle ore di punta.
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+# Il job committa la pagina e la cache, quindi serve accesso in scrittura.
+permissions:
+  contents: write
+
+# Una run alla volta: due run in parallelo si darebbero fastidio sul push.
+concurrency:
+  group: daily-paper-radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run paper radar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PUBMED_EMAIL: ${{ secrets.PUBMED_EMAIL }}
+        run: python main.py
+
+      - name: Commit page and cache if changed
+        run: |
+          # git add prima del confronto: --cached vede anche i file nuovi,
+          # mentre "git diff" da solo ignora quelli non ancora tracciati.
+          git add docs/index.html data/papers.json
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica: niente da committare."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Radar update $(date -u '+%Y-%m-%d')"
+          # Se nel frattempo hai pushato da locale, riallinea invece di fallire.
+          git push || (git pull --rebase --autostash && git push)
