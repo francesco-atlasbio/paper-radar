@@ -9,6 +9,7 @@ on:
 # Il job committa la pagina e la cache, quindi serve accesso in scrittura.
 permissions:
   contents: write
+  issues: write   # per aprire una issue quando la run fallisce
 
 # Una run alla volta: due run in parallelo si darebbero fastidio sul push.
 concurrency:
@@ -54,3 +55,34 @@ jobs:
           git commit -m "Radar update $(date -u '+%Y-%m-%d')"
           # Se nel frattempo hai pushato da locale, riallinea invece di fallire.
           git push || (git pull --rebase --autostash && git push)
+
+      # Scatta solo se uno degli step precedenti e' fallito. Apre una issue:
+      # GitHub la notifica via mail e app, cosi' te ne accorgi senza aprire
+      # la tab Actions. Se una issue di fallimento e' gia' aperta aggiunge un
+      # commento invece di crearne una nuova, per non intasare il repo.
+      - name: Notify on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create radar-failure --color B60205 \
+            --description "Una run automatica di Paper Radar e' fallita" --force
+
+          BODY="La run automatica del $(date -u '+%Y-%m-%d %H:%M UTC') e' fallita.
+
+          Log completo: $RUN_URL
+
+          Cause tipiche: chiave API scaduta o senza credito, bioRxiv o PubMed
+          irraggiungibili, quota GitHub Actions esaurita."
+
+          EXISTING=$(gh issue list --label radar-failure --state open \
+                       --limit 1 --json number --jq '.[0].number')
+
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+            echo "Commentata la issue #$EXISTING"
+          else
+            gh issue create --title "Paper Radar: run fallita" \
+              --label radar-failure --body "$BODY"
+          fi
