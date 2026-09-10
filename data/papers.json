@@ -1313,5 +1313,38 @@
   "title": "Machine Learning-Derived Immune Gene Signature Predicts Prognosis and Therapeutic Vulnerabilities in Multiple Myeloma.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42702361/",
   "why": "Develops a prognostic immune gene signature with transcriptome-based drug-response prediction in myeloma, relevant to drug response prediction but not clinical trial outcome modeling."
+ },
+ {
+  "abstract": "Biomedical Digital Twins (DTs) are emerging as a significant concept in precision health and drug discovery, enabling dynamic, high-resolution representations of patients through the real-time integration of multimodal datasets. While most studies focus on organ or patient-level models, accurate prediction of drug response depends on molecular and cellular processes. At the cellular level, drugs interact with their targets, modulate signaling pathways, and ultimately drive cellular responses. Therefore, extending the DT framework to the cellular level is an important step toward developing more reliable and predictive models for precision drug development. Cellular Digital Twins (CDTs) address this need by integrating diverse biological data, such as multi-omics, imaging data, and functional measurements. By combining these data with mechanistic models and artificial intelligence, CDTs provide a dynamic representation of cellular states and predict cellular responses to drugs. In doing so, they capture molecular interactions, downstream signaling pathways, associated phenotypic alterations, and adaptive cellular responses to pharmacological perturbations. In this review, we discuss the foundational principles and emerging methodologies for the development of cellular-level DTs, with a particular focus on their application in drug discovery and development. We provide a structured overview of the core components, computational frameworks, and AI-driven approaches underpinning CDT development for drug response prediction in precision medicine. We also discuss recent advances in drug response prediction and perturbation modeling and highlight key challenges, including data integration, scalability, interpretability, and validation.",
+  "authors": "Danishuddin, Md Azizul Haque, Geet Madhukar, Shawez Khan, Shahper Nazeer Khan, Jong-Joo Kim",
+  "date": "2026-09-09",
+  "doi": "10.1016/j.biotechadv.2026.109040",
+  "highlights": [
+   {
+    "note": "core mechanistic drug response prediction framework",
+    "quote": "CDTs provide a dynamic representation of cellular states and predict cellular responses to drugs"
+   },
+   {
+    "note": "directly addresses drug response prediction methods",
+    "quote": "recent advances in drug response prediction and perturbation modeling"
+   },
+   {
+    "note": "structured overview of methodology relevant to modeling approaches",
+    "quote": "core components, computational frameworks, and AI-driven approaches underpinning CDT development"
+   }
+  ],
+  "key": "doi:10.1016/j.biotechadv.2026.109040",
+  "pmid": "42716356",
+  "read_first": [
+   "Section on core components and computational frameworks",
+   "Section on recent advances in drug response prediction and perturbation modeling",
+   "Discussion of key challenges (validation, interpretability)"
+  ],
+  "score": 6,
+  "scored_at": "2026-09-10T06:15:23.363005+00:00",
+  "source": "PubMed",
+  "title": "A cellular Digital Twin framework for predictive and mechanistic modeling of drug responses in precision medicine.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42716356/",
+  "why": "Reviews cellular digital twin frameworks for drug response prediction, directly relevant to drug response prediction interest but not clinical trial outcome prediction."
  }
 ]
