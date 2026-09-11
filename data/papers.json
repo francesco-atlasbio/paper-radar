@@ -1346,5 +1346,33 @@
   "title": "A cellular Digital Twin framework for predictive and mechanistic modeling of drug responses in precision medicine.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42716356/",
   "why": "Reviews cellular digital twin frameworks for drug response prediction, directly relevant to drug response prediction interest but not clinical trial outcome prediction."
+ },
+ {
+  "abstract": "Polo-like kinase 1 (PLK1) and forkhead box M1 (FOXM1) have been widely studied in various cancers; however, their expression characteristics in endometrial cancer (EC) and their potential association with tumor microenvironment remodeling remain insufficiently characterized. This study integrated The Cancer Genome Atlas uterine corpus endometrial carcinoma cohort, Gene Expression Omnibus, pan-cancer transcriptomic data, Human Protein Atlas/Clinical Proteomic Tumor Analysis Consortium, and local immunohistochemistry data to evaluate PLK1 expression and clinicopathological relevance across transcriptomic, proteomic, and histopathological data. Differential expression, survival, gene-set enrichment, transcription-factor enrichment, and immune-infiltration analyses characterized PLK1-associated features. In vitro experiments combined EC cell lines AN3CA and HEC-1A with co-immunoprecipitation, Western blotting, Transwell assays, and a THP-1 conditioned-medium model. Drug-response prediction and structure-based analysis prioritized candidate therapeutic hypotheses. PLK1 was consistently upregulated at both mRNA and protein levels in EC and was associated with higher tumor grade and International Federation of Gynecology and Obstetrics (FIGO) stage. In survival analysis, higher PLK1 expression was associated with poorer overall survival in univariable models but not after adjustment for age, tumor grade, and FIGO stage. Functional enrichment analysis showed that PLK1-associated genes were mainly involved in cell-cycle and mitotic processes. FOXM1 was identified as a potential candidate component of the PLK1-associated transcriptional program and was positively correlated with PLK1 expression and cell-cycle-related features. In vitro experiments supported an interaction between PLK1 and FOXM1 and suggested that FOXM1 Thr600 phosphorylation-related alterations were associated with migration and invasion phenotypes. Furthermore, the PLK1/FOXM1-associated tumor-cell state was linked to macrophage-related immune features and changes in the M2-like marker profile of THP-1-derived macrophage-like cells. Drug response analyses suggested differential predicted sensitivity patterns in PLK1-high tumors, providing candidate therapeutic hypotheses for further validation. The PLK1/FOXM1-associated tumor-cell state may represent a distinct molecular feature associated with proliferative activity, invasive phenotypes, and macrophage-related immune features in EC. This study provides preliminary evidence supporting the biological relevance of this molecular feature and highlights potential therapeutic directions for future investigation.",
+  "authors": "Longwei Li, Yunyun Xiao, Yaping Wang, Guangyao Song, Ming Liu, Xueling Qu, Lu Han",
+  "date": "2026-09-10",
+  "doi": "10.1038/s41392-025-02325-5",
+  "highlights": [
+   {
+    "note": "only tangential drug-response prediction component",
+    "quote": "Drug-response prediction and structure-based analysis prioritized candidate therapeutic hypotheses."
+   },
+   {
+    "note": "exploratory, not clinical trial focused",
+    "quote": "Drug response analyses suggested differential predicted sensitivity patterns in PLK1-high tumors, providing candidate therapeutic hypotheses for further validation."
+   }
+  ],
+  "key": "doi:10.1038/s41392-025-02325-5",
+  "pmid": "42719140",
+  "read_first": [
+   "Methods: Drug-response prediction and structure-based analysis section",
+   "Results: PLK1-associated drug sensitivity findings"
+  ],
+  "score": 3,
+  "scored_at": "2026-09-11T06:13:00.039403+00:00",
+  "source": "PubMed",
+  "title": "PLK1/FOXM1-associated tumor-cell state and macrophage-related immune features in endometrial cancer.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42719140/",
+  "why": "Focuses on PLK1/FOXM1 biology and tumor microenvironment in endometrial cancer, with drug-response prediction only as a minor exploratory add-on, not core to trial or drug-response prediction methodology."
  }
 ]
