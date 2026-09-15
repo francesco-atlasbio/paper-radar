@@ -61,66 +61,6 @@
   "why": "Broad, generic review of AI in pharma with no specific methods, data, or outcome-prediction results relevant to trial outcome prediction."
  },
  {
-  "abstract": "Machine learning models are increasingly used to predict cognitive and clinical outcomes from neuroimaging data, yet challenges in fairness and generalizability remain. Large scale datasets are often racially and ethnically imbalanced, leading to systematic performance disparities, with models typically achieving higher accuracy for majority populations represented in the training data. In this study, we evaluated whether supervised domain adaptation methods including balanced weighting, two-stage TrAdaBoost, feature augmentation with SrcOnly prediction, and linear interpolation can mitigate these biases. Using the ABCD dataset, we assessed whether models trained on 80 MRI measures from White American participants could generalize more effectively to African American participants. All domain adaptation methods reduced prediction error for African American participants, particularly for MRI modalities with large baseline disparities (e.g., structural MRI), while offering limited improvements where initial gaps were smaller (e.g., functional connectivity). Among the approaches, balanced weighting performed best and remained stable and beneficial even when only 10 African American participants were used to adapt the original model trained exclusively on White American participants. These findings suggest that simple, low-cost strategies can effectively reduce cross-ethnic performance gaps and improve equity in predictive neuroimaging, offering a practical path forward for future neuroimaging predictive biomarkers.",
-  "authors": "Lal Khakpoor, F.; van der Vliet, W.; Deng, J.; Wang, Y.; Pat, N.",
-  "date": "2026-09-07",
-  "doi": "10.64898/2026.05.25.727742",
-  "highlights": [],
-  "key": "doi:10.64898/2026.05.25.727742",
-  "pmid": "",
-  "read_first": [],
-  "score": 3,
-  "scored_at": "2026-09-09T14:42:08.705536+00:00",
-  "source": "bioRxiv",
-  "title": "Supervised Domain Adaptation Mitigates Cross-Ethnicity Prediction Error in Neuroimaging Based Cognitive Prediction",
-  "url": "https://doi.org/10.64898/2026.05.25.727742",
-  "why": "This is about fairness in neuroimaging cognitive prediction, not clinical trial outcome prediction or drug development ML."
- },
- {
-  "abstract": "Endometriosis is a chronic inflammatory disease associated with pelvic pain, infertility, and delayed diagnosis. Growing evidence suggests that altered DNA methylation contributes to disease development and could serve as a biomarker for disease. We developed a leakage-safe machine learning pipeline to classify endometriosis case-control status and menstrual cycle phase using genome-wide DNA methylation data from eutopic endometrial tissue. The dataset consisted of 984 samples profiled using the Illumina Infinium MethylationEPIC array, with measurements across approximately 759,000 CpG sites. Technical variation was corrected using SmartSVA batch correction. Ridge logistic regression models were trained using stratified 80/20 train-test splits, with regularization strength selected via stratified cross-validation. Feature selection approaches included ridge coefficient ranking, per-CpG t-tests, and univariate logistic regression with FDR correction. Model validity was evaluated using label-shuffling analyses. Menstrual cycle phase classification showed strong performance (mean cross-validation AUROC: 0.971, held-out test AUROC: 0.989), reflecting genome-wide hormonally driven methylation. Ridge regression produced lower but meaningful performance for endometriosis classification (mean cross-validation AUROC: 0.854, held-out test AUROC: 0.875). Ridge coefficient-based feature selection identified compact predictive CpG sets, supporting the hypothesis that endometriosis-associated methylation signal is distributed across many loci rather than a few highly predictive CpGs. Pathway enrichment analyses identified substantial enrichment for menstrual cycle phase but limited enrichment for disease status following FDR correction, consistent with a diffuse endometriosis-associated signal. These findings demonstrate that ridge regression can detect methylation patterns associated with both endometriosis and menstrual cycle phase, highlighting the importance of accounting for cycle-related epigenetic variation in endometrial DNA methylation studies.",
-  "authors": "Nagasuri, A.; Khan, U.; Grosjean, P.; Siddharth, A.; Kosti, I.; Mortlock, S.; Houshdaran, S.; Rahmioglu, N.; Missmer, S. A.; Zondervan, K. T.; Montgomery, G.; Becker, C. M.; Rogers, P.; Irwin, J.; Oskotsky, T.; Lindquist, K.; Seaman, C.; Giudice, L. C.; Sirota, M.",
-  "date": "2026-09-07",
-  "doi": "10.64898/2026.09.02.749016",
-  "highlights": [],
-  "key": "doi:10.64898/2026.09.02.749016",
-  "pmid": "",
-  "read_first": [],
-  "score": 2,
-  "scored_at": "2026-09-09T14:42:10.986949+00:00",
-  "source": "bioRxiv",
-  "title": "Predicting Endometriosis Status and Menstrual Cycle Phase Using DNA Methylation",
-  "url": "https://doi.org/10.64898/2026.09.02.749016",
-  "why": "This is a diagnostic biomarker/ML classification study for endometriosis, not related to clinical trial outcomes or drug development."
- },
- {
-  "abstract": "Background: Small cell lung cancer (SCLC) is an aggressive, high-grade neuroendocrine carcinoma (hgNEC) with poor prognosis. Tarlatamab, a DLL3-targeting T cell engager was approved in 2024 for relapsed SCLC, with almost doubled overall survival benefit compared to chemotherapy. However, over half of patients do not respond to tarlatamab and others develop resistance within months. With multiple DLL3-targeting therapies in clinical trials, there are currently no validated predictive biomarkers to identify patients most likely to benefit from tarlatamab. In this study, we evaluate baseline DLL3 IHC level in patients as a predictive biomarker to tarlatamab clinical outcome. Methods: We assembled a cohort of 138 patients within IRB-approved MD Anderson GEMINI database (PA13-0589) with DLL3 expression by CLIA-validated immunohistochemistry (IHC), and those treated with tarlatamab from 7/1/2024 to 3/30/2026. Only those with DLL3 IHC results and treated with tarlatamab were included in this predictive biomarker study. All DLL3 levels were reported as percentage cells with cytoplasmic or surface DLL3 expression, including 24 with additional intensity score and H-score calculation. demographic, clinical, and outcome data were collected. Systemic and intracranial response data were assessed by RECIST and mRANO BM criteria respectively. Longitudinal liquid biopsies were taken from a subset of patients for circulating tumor DNA (ctDNA) and (Cytometry by Time-of-Flight) CyTOF analyses. Results: In the predictive biomarker cohort of 54 patients with SCLC treated with tarlatamab, Median DLL3% level in tarlatamab treated cohort was 75%. Median follow-up time was 9.9 months, median time on tarlatamab treatment (ToT) was 5.8 months. At the data cut-off, 61% (33 out of 54) patients were alive. Kaplan-Meier curve stratified by DLL3 % of <=75% vs. >75 showed significant longer ToT and a trend toward longer median OS (mOS). In DLL3>75% compared to DLL3 <=75%: mToT was 10.1 months vs. 2.9 months (p=0.036), mOS: not reached vs. 9.5 months (p= 0.066). Among 41 patients who completed one cycle of tarlatamab treatment and were eligible for systemic (extra-cranial) response per RECIST criteria; we observed partial response (PR) in 51% (21) patients, stable disease (SD) in 22% (9) patients; and progressive disease (PD) in 27% (11) patients. The median DLL3 % in those with PR vs. PD were 80% vs. 40% (p=0.006); median DLL3% comparing PR and SD were 80% vs. 60% (p=0.051). Among 35 patients evaluable for intracranial response, best objective response prior to any brain radiation were 5 (14%) CR,11(31%) PR, 8 (23%) SD and 11 (31%) PD. 9 received brain radiation (8 SRS, 1 WBRT) during tarlatamab to achieve better intracranial control while systemic control is maintained. DLL3% does not appear to be correlated with intracranial response. Longitudinal ctDNA and CyTOF analyses showed persistent ctDNA positivity, as well as increasing NEUROD1 subtype cells in circulating tumor cells in post-tarlatamab progression samples. We additionally profiled DLL3 expression by IHC in 138 patients with SCLC and found heterogenous DLL3 expression, with Median DLL3% of 70% across different biopsy sites. Conclusions: Our data suggests DLL3 expression in patients with SCLC is heterogeneous and not ubiquitous, with median DLL3 IHC of 70%. DLL3 IHC predicts objective response and long-term outcome with tarlatamab. In addition, dynamic monitoring of ctDNA level and CTCs by CyTOF are suggestive of development of tarlatamab resistance, however further studies with larger cohort of paired longitudinal samples are needed to validate the novel blood-based biomarkers. To our knowledge, this study is the first to validate DLL3 IHC as a predictive biomarker for tarlatamab in SCLC, which leads the way for optimizing treatment selection and combinatorial therapies for the subset of patients less likely to respond to tarlatamab.",
-  "authors": "Zhang, B.; Hong, L.; Wang, K.; Stewart, C. A.; Shah, K.; Wang, W.-l.; Serrano, A.; Solis Soto, L. M.; Cardnell, R. J.; Halliday, A.; Parma, M.; Lopez, E. R.; Bose, M.; Ruoff, C.; Ehsan, S.; Ramkumar, K.; Li, T.; Zheng, R.; Karacosta, L. G.; Zhang, J.; Heymach, J. V.; Gay, C. M.; Byers, L. A.",
-  "date": "2026-09-07",
-  "doi": "10.64898/2026.09.03.749238",
-  "highlights": [
-   {
-    "note": "biomarker-based outcome prediction motivation",
-    "quote": "there are currently no validated predictive biomarkers to identify patients most likely to benefit from tarlatamab"
-   },
-   {
-    "note": "core predictive outcome claim",
-    "quote": "DLL3 IHC predicts objective response and long-term outcome with tarlatamab"
-   }
-  ],
-  "key": "doi:10.64898/2026.09.03.749238",
-  "pmid": "",
-  "read_first": [
-   "Results: predictive biomarker cohort survival and response stratification",
-   "Methods: DLL3 IHC scoring and cohort assembly"
-  ],
-  "score": 4,
-  "scored_at": "2026-09-09T14:42:16.832684+00:00",
-  "source": "bioRxiv",
-  "title": "DLL3 expression predicts response and long-term outcome in small cell lung cancer patients treated with tarlatamab",
-  "url": "https://doi.org/10.64898/2026.09.03.749238",
-  "why": "A biomarker-outcome correlation study for a specific SCLC drug, relevant only tangentially to clinical trial outcome prediction and lacking any machine learning methodology."
- },
- {
   "abstract": "Public repositories of T cell receptor (TCR)-peptide-MHC (pMHC) interactions constitute a critical resource for studying adaptive immunity and developing predictive models of TCR specificity. However, recent evidence suggests that a substantial fraction of reported TCR-pMHC interactions may be incorrectly annotated, limiting the quality of downstream analyses and machine learning applications. Here, we present an unsupervised sequence similarity-based framework for denoising peptide-specific TCR repertoires. The method combines pairwise TCR similarity metrics derived from TCRbase and TCRdist3 with hierarchical clustering and a novel adaptation of the silhouette score designed to address the prevalence of singleton clusters and highly imbalanced cluster structures. By incorporating a pseudo-cluster containing singleton and background TCRs, and by optimising both clustering distance thresholds and minimum cluster-size criteria, the proposed approach identifies TCRs likely to represent true antigen-specific binders while filtering putative noise. Using experimentally validated repertoires from TCRvdb, we demonstrate that the modified silhouette score closely tracks clustering solutions that maximise separation between binding and non-binding TCRs, achieving strong agreement with independent validation based on the Matthews correlation coefficient. Extension to a large collection of peptide-specific TCR data revealed a strong negative correlation between the percentage of TCRs classified as noise and the predictive performance of peptide-specific binding models. Further, the denoising classification labels on this data set were corroborated using structural modeling confidence scores of the peptide-TCR interface extracted from a refined AlphaFold 3 modeling pipeline. Additionally, retraining NetTCR on denoised data improved internal cross-validated performance compared with models trained on the full data set, whereas models trained exclusively on TCRs classified as noise performed close to random. Together, these results demonstrate that sequence similarity-based denoising can effectively enrich for biologically meaningful TCR-pMHC interactions and improve the quality of training data for predictive immunological models. The proposed framework provides a scalable strategy for improving the reliability of public TCR databases and facilitating the development of more accurate TCR specificity prediction methods.",
   "authors": "Lund, J. M.; Deleuran, S. N.; Nielsen, M.",
   "date": "2026-09-08",
@@ -179,82 +119,6 @@
   "title": "Evaluation of the Translational Readiness of Pluripotent Stem Cell-Derived Vascular Cell Therapy for Limb Ischemia: A Systematic Review and Meta-analysis",
   "url": "https://doi.org/10.64898/2026.09.02.749027",
   "why": "This is a preclinical meta-analysis of stem cell therapy in animal models, not ML-based clinical trial outcome prediction or drug development methodology."
- },
- {
-  "abstract": "Molecular interactions underlie nearly all biological processes, yet most representation models describe isolated entities or specialize in a single molecular setting. Here, we introduce ATOMICA, an interaction-centered geometric deep learning model designed to learn transferable representations of intermolecular interfaces across proteins, small molecules, metal ions, and nucleic acids. Self-supervised pretraining on 2,037,972 interaction complexes yields representations spanning atoms, molecular building blocks, and complete interfaces. The latent space captures molecular identity and interaction context, supporting sequence recovery and zero-shot prioritization of residues involved in non-covalent interactions. ATOMICA provides structural information complementary to sequence representations on RNA and protein-pocket ligand classification. Across protein-pocket analyses, ATOMICA distinguishes ATP- and ADP-associated pocket states and retrieves ligand-matched pockets across proteins without detectable structural alignment. The latent space also enables cross-modal comparison, with orthosteric inhibitor embeddings retrieving regions proximal to native peptide and protein interfaces. Applied to the dark proteome, ATOMICA-Ligand predicts candidate ions or cofactors for 2,646 pockets, and five heme candidates show Soret-band shifts consistent with heme association. Together, these results show how interaction-centered molecular representations can transfer structural information across molecular interaction types and generate experimentally testable hypotheses.",
-  "authors": "Fang, A.; Desgagne, M.; Zhang, Z.; Zhou, A.; Loscalzo, J.; Pentelute, B. L.; Zitnik, M.",
-  "date": "2026-09-07",
-  "doi": "10.1101/2025.04.02.646906",
-  "highlights": [
-   {
-    "note": "core ML drug development method, no clinical link",
-    "quote": "interaction-centered geometric deep learning model designed to learn transferable representations of intermolecular interfaces across proteins, small molecules, metal ions, and nucleic acids"
-   },
-   {
-    "note": "drug discovery application, preclinical stage only",
-    "quote": "ATOMICA-Ligand predicts candidate ions or cofactors for 2,646 pockets"
-   }
-  ],
-  "key": "doi:10.1101/2025.04.02.646906",
-  "pmid": "",
-  "read_first": [
-   "Methods: pretraining dataset and model architecture",
-   "Results: protein-pocket ligand classification section"
-  ],
-  "score": 4,
-  "scored_at": "2026-09-09T14:53:32.738940+00:00",
-  "source": "bioRxiv",
-  "title": "Learning Universal Representations of Intermolecular Interactions with ATOMICA",
-  "url": "https://doi.org/10.1101/2025.04.02.646906",
-  "why": "A geometric deep learning model for molecular interfaces useful for drug discovery, but not focused on clinical trials or patient drug response prediction."
- },
- {
-  "abstract": "Accurate, reliable, large-scale disease predictions are essential to ensure rice production. Existing disease prediction models often face a trade-off between interpretability and predictive capability, necessitating the integration of mechanistic knowledge and data-driven learning within a modelling framework. Accordingly, we propose a physics-informed hybrid gated recurrent unit (PI-HGRU) model for spatiotemporal dynamic prediction of rice sheath blight disease, caused by a fungus. Our model embeds differential equations describing disease transmission dynamics into a hybrid gated recurrent unit (HGRU) framework as mechanistic constraints, thereby enabling collaborative modelling between epidemiological processes and data-driven learning. We conducted model training and evaluation using a long-term, multi-source dataset spanning 17 years (2000-2016) and covering 16 major rice-producing provinces in southern China. These rich data include spatiotemporally aligned field disease observations, remote sensing data, meteorological data, and soil property data. In addition, to address the challenges of irregular sampling intervals and inconsistent sequence lengths in disease survey data, we adopted a sliding time-window-based prediction framework. We further conducted a time-window sensitivity analysis to determine appropriate configurations of the input time window and lag time, enabling the model to represent the cumulative and delayed effects of environmental factors. Our PI-HGRU framework substantially outperforms the purely data-driven HGRU baseline model, improving the squared Pearson correlation coefficient (r2) by 22.8% while reducing the root mean square error (RMSE) and mean absolute error (MAE) by 10.2% and 18.0%, respectively. Furthermore, analysis of the models intermediate variables showed that the transmission rate {beta}(t) exhibited interpretable relationships with environmental conditions within the input time window, providing a process-related link between environmental drivers and modeled disease transmission dynamics. Overall, our work demonstrates that integrating epidemiological mechanisms into deep learning models in a physics-informed manner can improve predictive accuracy and stability while enhancing model interpretability, highlighting its potential for large-scale disease forecasting and precision disease management.",
-  "authors": "Jin, Z.; Wang, J.; Huang, W.; Zhang, J.; Ma, H.; Salguero-Gomez, R.",
-  "date": "2026-09-07",
-  "doi": "10.64898/2026.09.03.749105",
-  "highlights": [],
-  "key": "doi:10.64898/2026.09.03.749105",
-  "pmid": "",
-  "read_first": [],
-  "score": 1,
-  "scored_at": "2026-09-09T14:53:35.893326+00:00",
-  "source": "bioRxiv",
-  "title": "A physics-informed hybrid deep learning model for spatiotemporal rice disease prediction using multi-source data",
-  "url": "https://doi.org/10.64898/2026.09.03.749105",
-  "why": "This is agricultural plant disease forecasting using deep learning, unrelated to clinical trials or drug development."
- },
- {
-  "abstract": "Water scarcity and increasingly irregular rainfall threaten avocado production in Mediterranean regions, yet the long term physiological responses of mature trees to sustained deficit irrigation remain poorly understood. We conducted a two-year field study integrating continuous monitoring of the soil plant atmosphere continuum, drone-based multispectral imaging, canopy structural analysis, and fruit phenotyping in a mature avocado orchard subjected to three irrigation regimes. The two study years differed markedly in rainfall, providing a unique opportunity to evaluate how environmental conditions modulate tree responses to water limitation. Trees under severe deficit irrigation showed depletion of water in deeper soil layers and a flattened physiological profile, with near-zero diel variation in leaf thickness and trunk water potential, indicating minimal transpiration and decoupling of tree water status from environmental demand. Drone telemetry via NDVI detected stress during fruit growth and maturation, but not during flowering or the new summer leaf flush, revealing greater drought sensitivity at later maturation stages. Although canopy area did not differ among irrigation treatments, canopy surface roughness increased significantly under deficit irrigation, thereby identifying a novel structural indicator of drought stress. Despite large physiological differences among treatments, fruit number remained stable, while fruit weight decreased significantly under severe deficit irrigation, particularly in the wetter year, suggesting that annual rainfall modulates the trade-off between fruit retention and fruit growth. This study provides the first continuous, multi-scale characterization of avocado performance under sustained deficit irrigation in Mediterranean conditions. By integrating plant-based sensors, remote sensing, and artificial intelligence, we reveal previously undescribed stress dynamics and identify new indicators for precision irrigation management in fruit crops.",
-  "authors": "Ferez-Gomez, A.; Soler-Escamez, L.; Ferrer-Blanco, C.; Perez-Aguilar, A.; Hormaza, J. I.; Diaz-Zayas, A.; Losada, J. M.",
-  "date": "2026-09-07",
-  "doi": "10.64898/2026.09.03.745400",
-  "highlights": [],
-  "key": "doi:10.64898/2026.09.03.745400",
-  "pmid": "",
-  "read_first": [],
-  "score": 1,
-  "scored_at": "2026-09-09T14:53:39.711106+00:00",
-  "source": "bioRxiv",
-  "title": "Continuous monitoring of deficit irrigation in avocado across two contrasting rainfall years using sensor networks, telemetry, and machine learning",
-  "url": "https://doi.org/10.64898/2026.09.03.745400",
-  "why": "This is agricultural irrigation science with no connection to clinical trials, drug development, or drug response prediction."
- },
- {
-  "abstract": "Viral capsid proteins preserve information on higher-order shell architecture and deep evolutionary history, yet current capsid annotation relies predominantly on homology-based methods that have reduced sensitivity across highly divergent environmental sequences. Here we develop ESMCapsid, a capsid-specialized protein language model for remote capsid detection and architecture-aware representation learning. Screening 343 million representative metagenomic protein clusters revealed a large homology-dark capsid repertoire, with approximately 62% of candidates lacking matches to existing reference databases. Sparse autoencoder decomposition identified recurrent semantic motifs linking homology-dark proteins to known structural lineages, suggesting that interpretable higher-order architectural information can be recovered directly from capsid sequences at metagenomic scale. Mapping conserved motif cores onto resolved viral shells showed spatial clustering and restricted radial positions, indicating that ESMCapsid captures geometric constraints beyond sequence similarity alone. Together, our findings establish a sequence-based route to organize homology-dark viral diversity through conserved architectural principles, extending viral discovery beyond sequence homology.",
-  "authors": "Liu, S.; Xia, S.; Wang, H.",
-  "date": "2026-09-07",
-  "doi": "10.64898/2026.09.06.749605",
-  "highlights": [],
-  "key": "doi:10.64898/2026.09.06.749605",
-  "pmid": "",
-  "read_first": [],
-  "score": 1,
-  "scored_at": "2026-09-09T14:53:44.826068+00:00",
-  "source": "bioRxiv",
-  "title": "Capsid-specialized protein language models reveal higher-order viral architecture from sequence",
-  "url": "https://doi.org/10.64898/2026.09.06.749605",
-  "why": "This is about protein language models for viral capsid discovery, unrelated to clinical trials or drug response prediction."
  },
  {
   "abstract": "Ancestral gene content inferences allow inferring the set of genes - and by extension, the cellular features and metabolic capabilities - of ancestral organisms, based on data from modern genomes. Current methods differ in their approach to ancestral inferences and the kinds of errors they make: reconciliation methods map gene trees onto species trees, and tend to under-estimate ancestral contents due to phylogenetic noise; profile methods model the evolution of phylogenetic profiles (presence-absence or count data) on the species tree, and tend to return inflated ancestors because they ignore gene trees and as a result can only account for horizontal gene transfer (HGT) in a limited manner. For reasons of tractability, both approaches also share a core limitation: neither uses the fact that genes do not act alone but belong to operons, protein complexes, and metabolic pathways that may be gained and lost together or experience shared selective constraints. Here, we show that this context - the grammar of gene content - provides a rich source of information that can be used to greatly improve ancestral gene content inference and metabolic reconstruction under both the reconciliation- and profile-based approaches. We model this structure as an Ising model and infer its parameters from 113,104 bacterial and archaeal genomes (one per species representative in GTDB). We validate the model on extant taxa using phylum-level holdout (i.e. using test data from different prokaryotic phyla than training data), showing that it can accurately \"denoise\", i.e., reconstruct gene repertoires from highly fragmented and noisy input data, learning about protein-protein interactions and gene essentiality during the training process. When applied to ancestral reconstructions, the denoiser fills gaps in conservative reconstructions and removes excess genes from overly-generous ones, such that different reconstruction methods converge to broadly concordant conclusions. By using this gene content grammar, patchy method-dependent ancestral reconstructions can be turned into organism-like ones, and yield agreement on the gene families, cell-biological features, and metabolic capabilities of the deepest nodes in the tree of life.",
@@ -848,29 +712,6 @@
   "why": "Broad AI drug discovery review that includes a section on individualized drug response prediction, relevant but not focused on trial outcome prediction."
  },
  {
-  "abstract": "Nanomechanical resonators, including suspended microchannel resonators (SMRs), microcantilevers, doubly clamped beams, membranes, and optomechanical disk resonators, provide label-free measurements of the physical properties of single cells through changes in the sensor resonance frequency or mechanical fluctuations. These properties include cell mass, density, stiffness, viscoelasticity, refractive index, intrinsic vibrational modes, and active fluctuations. Here, we review recent advances in nanomechanical sensing of living cells, highlighting how these technologies have evolved from mass measurements toward multidimensional physical cell phenotyping. We discuss emerging capabilities such as vibrational spectroscopy, nanomotion-based functional assays, and integration with single-cell transcriptomics. Finally, we discuss current challenges and future applications for translating nanomechanical measurements into broadly practical tools for cell biology, precision medicine, anticancer drug response prediction, and antimicrobial drug susceptibility testing.",
-  "authors": "Oscar Malvar, Jose Jaime Ruz, Priscila M Kosaka, Montserrat Calleja, Javier Tamayo",
-  "date": "2026-09-07",
-  "doi": "10.1016/j.sbi.2026.103382",
-  "highlights": [
-   {
-    "note": "only passing mention of drug response relevance",
-    "quote": "anticancer drug response prediction, and antimicrobial drug susceptibility testing"
-   }
-  ],
-  "key": "doi:10.1016/j.sbi.2026.103382",
-  "pmid": "42705107",
-  "read_first": [
-   "Discussion: future applications for precision medicine and drug response prediction"
-  ],
-  "score": 3,
-  "scored_at": "2026-09-09T15:04:56.954381+00:00",
-  "source": "PubMed",
-  "title": "Nanomechanical resonators as probes for living cells.",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/42705107/",
-  "why": "Reviews nanomechanical sensors for cell phenotyping; only tangentially mentions drug response prediction as a future application, not the core focus."
- },
- {
   "abstract": "Biomedical Digital Twins (DTs) are emerging as a significant concept in precision health and drug discovery, enabling dynamic, high-resolution representations of patients through the real-time integration of multimodal datasets. While most studies focus on organ or patient-level models, accurate prediction of drug response depends on molecular and cellular processes. At the cellular level, drugs interact with their targets, modulate signaling pathways, and ultimately drive cellular responses. Therefore, extending the DT framework to the cellular level is an important step toward developing more reliable and predictive models for precision drug development. Cellular Digital Twins (CDTs) address this need by integrating diverse biological data, such as multi-omics, imaging data, and functional measurements. By combining these data with mechanistic models and artificial intelligence, CDTs provide a dynamic representation of cellular states and predict cellular responses to drugs. In doing so, they capture molecular interactions, downstream signaling pathways, associated phenotypic alterations, and adaptive cellular responses to pharmacological perturbations. In this review, we discuss the foundational principles and emerging methodologies for the development of cellular-level DTs, with a particular focus on their application in drug discovery and development. We provide a structured overview of the core components, computational frameworks, and AI-driven approaches underpinning CDT development for drug response prediction in precision medicine. We also discuss recent advances in drug response prediction and perturbation modeling and highlight key challenges, including data integration, scalability, interpretability, and validation.",
   "authors": "Danishuddin, Md Azizul Haque, Geet Madhukar, Shawez Khan, Shahper Nazeer Khan, Jong-Joo Kim",
   "date": "2026-09-09",
@@ -1105,5 +946,62 @@
   "title": "Multi-omics characterization of a GPRC5A+ epithelial subpopulation associated with malignant features in colorectal cancer.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42723078/",
   "why": "This is primarily a multi-omics CRC biology study; drug-response prediction (OncoPredict, trametinib) is only a minor, exploratory, hypothesis-generating side finding."
+ },
+ {
+  "abstract": "Artificial intelligence (AI) and machine learning (ML) now reach into every stage of AML care. Deep learning models read therapy-relevant mutations directly from bone marrow smears; automated flow cytometry gating reproduces expert calls in under a minute; and the first AI pathology devices for hematology have cleared regulatory review and entered clinical use. Beyond diagnosis, ML captures the age-dependent weight of individual mutations that categorical ELN scoring misses, drug response prediction for venetoclax-azacitidine has been validated across multiple external cohorts, and large language models are being tested for tumor board support and trial matching. The next wave, from clonal architecture modeling and single-cell foundation models to digital twins and reinforcement learning for adaptive dosing, could move AML management from reactive toward predictive, evolution-aware care. This review departs from existing AI-in-hematology surveys in three ways: we (i) restrict the scope to AML and organize the field around clinical decision points rather than technology categories, (ii) grade every tool on a five-tier author-defined clinical readiness level (CRL-AML 1-5), which exposes hundreds of models clustered at CRL-AML 1-2 and none yet in prospective clinical evaluation, and (iii) close with a numbered three-year agenda naming the consortia, datasets, and pragmatic trials needed to carry the field from publication to practice.",
+  "authors": "Federico De Marchi, Giulia Ciotti, Alessandro Atanasio, Giovanni Pascarella, Alessandra Sperotto, Michele Gottardi",
+  "date": "2026-09-15",
+  "doi": "10.3390/cells15171539",
+  "highlights": [
+   {
+    "note": "directly matches drug response prediction interest",
+    "quote": "drug response prediction for venetoclax-azacitidine has been validated across multiple external cohorts"
+   },
+   {
+    "note": "touches trial-related AI application",
+    "quote": "large language models are being tested for tumor board support and trial matching"
+   },
+   {
+    "note": "framework for assessing model translational maturity",
+    "quote": "grade every tool on a five-tier author-defined clinical readiness level (CRL-AML 1-5)"
+   }
+  ],
+  "key": "doi:10.3390/cells15171539",
+  "pmid": "42738832",
+  "read_first": [
+   "Section on venetoclax-azacitidine drug response prediction",
+   "CRL-AML grading framework and readiness tiers",
+   "Three-year agenda for pragmatic trials"
+  ],
+  "score": 6,
+  "scored_at": "2026-09-15T11:06:53.753611+00:00",
+  "source": "PubMed",
+  "title": "Putting the I in AML: Artificial Intelligence and Machine Learning in Acute Myeloid Leukemia.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42738832/",
+  "why": "Reviews AML-specific AI including validated drug response prediction, but broader scope on diagnostics dilutes direct relevance to trial outcome prediction."
+ },
+ {
+  "abstract": "Complex diseases, including cancer, rare genetic disorders, neurodevelopmental and psychiatric conditions, and neurodegenerative diseases, arise from interactions among genetic variation, gene regulation, and cellular states that are difficult to capture using a single data type or biological scale. Biological foundation models address this challenge by treating nucleotides and genes as tokens and learning representations that can be transferred to downstream biomedical and clinical tasks. In this review, we examine two major model classes, genomic sequence foundation models and cell foundation models, and compare their tokenization strategies, model architectures, pretraining objectives, and adaptation methods. We summarize their emerging applications in regulatory variant interpretation, disease-associated cell-state analysis, drug-response prediction, and therapeutic target discovery across complex diseases. We distinguish applications supported by experimental or retrospective validation from those that remain primarily computational or conceptual. We further discuss key challenges to clinical translation, including multimodal data integration, model interpretability, benchmarking, patient-specific prediction, and privacy protection. We highlight future opportunities to integrate biological foundation models with emerging frameworks of medical digital twins, agentic AI, and federated learning. By linking model design to translational goals, this review provides a practical framework for evaluating biological foundation models and their readiness for complex disease research and clinical use.",
+  "authors": "Tiana Noll-Walker, Yong Chen",
+  "date": "2026-09-15",
+  "doi": "10.3390/biology15171527",
+  "highlights": [
+   {
+    "note": "only direct mention of drug response prediction",
+    "quote": "drug-response prediction, and therapeutic target discovery across complex diseases"
+   }
+  ],
+  "key": "doi:10.3390/biology15171527",
+  "pmid": "42737959",
+  "read_first": [
+   "Applications section: drug-response prediction subsection",
+   "Discussion: patient-specific prediction challenges"
+  ],
+  "score": 4,
+  "scored_at": "2026-09-15T11:06:57.380308+00:00",
+  "source": "PubMed",
+  "title": "Biological Foundation Models for Complex Disease Research and Clinical Translation.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42737959/",
+  "why": "Broad review of genomic/cell foundation models mentions drug-response prediction only briefly among many other topics, not focused on trial outcomes."
  }
 ]
