@@ -1,70 +1,5 @@
 [
  {
-  "abstract": "Polo-like kinase 1 (PLK1) and forkhead box M1 (FOXM1) have been widely studied in various cancers; however, their expression characteristics in endometrial cancer (EC) and their potential association with tumor microenvironment remodeling remain insufficiently characterized. This study integrated The Cancer Genome Atlas uterine corpus endometrial carcinoma cohort, Gene Expression Omnibus, pan-cancer transcriptomic data, Human Protein Atlas/Clinical Proteomic Tumor Analysis Consortium, and local immunohistochemistry data to evaluate PLK1 expression and clinicopathological relevance across transcriptomic, proteomic, and histopathological data. Differential expression, survival, gene-set enrichment, transcription-factor enrichment, and immune-infiltration analyses characterized PLK1-associated features. In vitro experiments combined EC cell lines AN3CA and HEC-1A with co-immunoprecipitation, Western blotting, Transwell assays, and a THP-1 conditioned-medium model. Drug-response prediction and structure-based analysis prioritized candidate therapeutic hypotheses. PLK1 was consistently upregulated at both mRNA and protein levels in EC and was associated with higher tumor grade and International Federation of Gynecology and Obstetrics (FIGO) stage. In survival analysis, higher PLK1 expression was associated with poorer overall survival in univariable models but not after adjustment for age, tumor grade, and FIGO stage. Functional enrichment analysis showed that PLK1-associated genes were mainly involved in cell-cycle and mitotic processes. FOXM1 was identified as a potential candidate component of the PLK1-associated transcriptional program and was positively correlated with PLK1 expression and cell-cycle-related features. In vitro experiments supported an interaction between PLK1 and FOXM1 and suggested that FOXM1 Thr600 phosphorylation-related alterations were associated with migration and invasion phenotypes. Furthermore, the PLK1/FOXM1-associated tumor-cell state was linked to macrophage-related immune features and changes in the M2-like marker profile of THP-1-derived macrophage-like cells. Drug response analyses suggested differential predicted sensitivity patterns in PLK1-high tumors, providing candidate therapeutic hypotheses for further validation. The PLK1/FOXM1-associated tumor-cell state may represent a distinct molecular feature associated with proliferative activity, invasive phenotypes, and macrophage-related immune features in EC. This study provides preliminary evidence supporting the biological relevance of this molecular feature and highlights potential therapeutic directions for future investigation.",
-  "authors": "Longwei Li, Yunyun Xiao, Yaping Wang, Guangyao Song, Ming Liu, Xueling Qu, Lu Han",
-  "date": "2026-09-10",
-  "doi": "10.1038/s41392-025-02325-5",
-  "highlights": [
-   {
-    "note": "only tangential drug-response prediction component",
-    "quote": "Drug-response prediction and structure-based analysis prioritized candidate therapeutic hypotheses."
-   },
-   {
-    "note": "exploratory, not clinical trial focused",
-    "quote": "Drug response analyses suggested differential predicted sensitivity patterns in PLK1-high tumors, providing candidate therapeutic hypotheses for further validation."
-   }
-  ],
-  "key": "doi:10.1038/s41392-025-02325-5",
-  "pmid": "42719140",
-  "read_first": [
-   "Methods: Drug-response prediction and structure-based analysis section",
-   "Results: PLK1-associated drug sensitivity findings"
-  ],
-  "score": 3,
-  "scored_at": "2026-09-11T06:13:00.039403+00:00",
-  "source": "PubMed",
-  "title": "PLK1/FOXM1-associated tumor-cell state and macrophage-related immune features in endometrial cancer.",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/42719140/",
-  "why": "Focuses on PLK1/FOXM1 biology and tumor microenvironment in endometrial cancer, with drug-response prediction only as a minor exploratory add-on, not core to trial or drug-response prediction methodology."
- },
- {
-  "abstract": "Communicative abilities acquired over the first year of life are foundational for language development. Understanding the neural mechanisms underlying these abilities can explain individual differences and improve predictions of later language outcomes. While prior research on neural markers of language development has focused predominantly on oscillatory neural activity, the underlying aperiodic component of the neural signal may provide further insights into cortical maturation by indirectly reflecting variation in neural excitation/inhibition (E/I) balance. In neurodevelopmental conditions, both reduced and elevated aperiodic activity are linked to atypical development, and initial evidence from at-risk cohorts also relates aperiodic activity to language outcome. Moving beyond clinical populations, the present study examined whether aperiodic activity during neonatal resting-state EEG relates to 12-month communicative abilities in typically developing infants. Aperiodic offset and exponent were extracted from resting-state EEG recorded two weeks after birth in n = 50 neonates using the FOOOF algorithm. At 12 months, communicative abilities were assessed with the parent-report CSBS-DP Infant-Toddler Checklist. Quadratic regression analyses showed an inverted U-shaped relationship between the neonatal aperiodic exponent and communicative abilities: both lower and higher exponent values were associated with poorer outcomes, with intermediate values linked to better abilities. No robust association was found for the offset. These findings suggest that aperiodic activity captures variability in early communicative development, with an optimum at intermediate levels, consistent with a balanced E/I state. The scope of aperiodic brain activity as a developmental marker may thus extend beyond clinical populations to predicting communicative development in healthy infants.",
-  "authors": "Reimann-Ayiko\u0308z, M.; Ameen, M. S.; Reisenberger, E.; Florea, C.; Preiss, J.; Angerer, M.; Schabus, M.; Roehm, D.; Heib, D.; Ma\u0308nnel, C.",
-  "date": "2026-09-10",
-  "doi": "10.64898/2026.09.05.749585",
-  "highlights": [],
-  "key": "doi:10.64898/2026.09.05.749585",
-  "pmid": "",
-  "read_first": [],
-  "score": 1,
-  "scored_at": "2026-09-12T06:15:22.434893+00:00",
-  "source": "bioRxiv",
-  "title": "Talking Brains: Neonatal Aperiodic Activity in Resting State EEG Relates to Later Communicative Abilities",
-  "url": "https://doi.org/10.64898/2026.09.05.749585",
-  "why": "This is about neonatal EEG and language development, unrelated to clinical trial outcomes, trial success, or drug response prediction."
- },
- {
-  "abstract": "Combination therapies are central to cancer treatment, but exhaustive screening is impractical. We introduce PHAROS, a framework that turns a pretrained single-cell perturbation model into a target-directed search engine for drug combinations. PHAROS predicts how a cell population changes under a drug, one drug at a time, then chains these predictions together to simulate drug combinations. It scores each simulated outcome against the desired target state and uses a search algorithm to find the most promising combinations, all without retraining the underlying model. Across two independent combinatorial perturbation datasets, PHAROS recovered exact or mechanism-matched two-drug responses in cell lines, both seen and unseen during model training. Its rankings were specific to the requested conversion and were not explained by single-drug effects, additive effects, or shared mechanism of action. In exploratory analyses of patient-derived metastatic HR+/HER2$-$ breast tumors and basal cell carcinoma (BCC), PHAROS prioritized FDA-approved regimens, distinguished combinations by their predicted tumor-versus-immune objective profiles, and nominated pathway-level hypotheses, while explicitly identifying both tumor cohorts as outside the model's supported distribution. PHAROS provides a modular route from pretrained virtual-cell models to inverse, single-cell combination-screening platforms.",
-  "authors": "Bezney, J.; Ruggeri, C.; Borra, F.; Qi, L. S.; Buffa, F. M.; Steinmetz, L. M.",
-  "date": "2026-09-10",
-  "doi": "10.64898/2026.09.08.749477",
-  "highlights": [
-   {
-    "note": "tangential drug response signal, not trial-focused",
-    "quote": "predicted tumor-versus-immune objective profiles"
-   }
-  ],
-  "key": "doi:10.64898/2026.09.08.749477",
-  "pmid": "",
-  "read_first": [],
-  "score": 3,
-  "scored_at": "2026-09-12T06:15:24.919557+00:00",
-  "source": "bioRxiv",
-  "title": "PHAROS: turning single-cell perturbation models into target-directed drug-combination screens",
-  "url": "https://doi.org/10.64898/2026.09.08.749477",
-  "why": "Focuses on drug-combination discovery via single-cell perturbation modeling, not clinical trial outcome or drug response prediction as typically framed."
- },
- {
   "abstract": "Colorectal cancer (CRC) exhibits marked cellular heterogeneity, and the cellular context of malignancy-associated epithelial programs remains incompletely defined. We integrated 2,993 CRC samples spanning bulk RNA-seq (n\u2009=\u20092,568; two OS/RFS cohorts), scRNA-seq (281,961 cells/152 specimens), spatial transcriptomics (n\u2009=\u20096), and proteomics (n\u2009=\u2009267). Analyses included single-cell integration/annotation, GSVA/HALLMARK, interactome, pseudotime, and ligand-receptor mapping; functional CRISPR assays, EMT immunoblotting, and xenografts; TF profiling (SCENIC/JASPAR/ChIP-qPCR); and exploratory drug-response prediction (OncoPredict), cell-sensitivity assays, and docking/MD modeling. We constructed a stage-stratified single-cell atlas and resolved eleven malignant epithelial subsets, characterizing Epi_4 as late-stage-enriched with EMT, hypoxia, and inflammatory programs and adverse OS/RFS. GPRC5A marked this subset, which we define as GPRC5A+Epi; its expression rose from stage I\u2192IV and was associated with poor outcomes across cohorts, with concordant spatial/proteomic observations. GPRC5A perturbation affected CRC proliferation, migration/invasion, EMT, and xenograft tumorigenicity, supporting a functionally important role in the tested models. SCENIC and ChIP-qPCR supported FOSL1 as an upstream regulator that occupies the GPRC5A promoter. Spatial and ligand-receptor analyses predicted close association and potentially reciprocal signaling between GPRC5A+Epi and POSTN+fibroblasts (COL1A1-SDC4, COL1A1/1A2-ITGA2/ITGB1, PPIA-BSG); concurrent high GPRC5A+Epi/POSTN+Fib signatures were associated with inferior OS/RFS. Drug-response analyses identified an association between GPRC5A status and trametinib sensitivity. Docking/MD produced a computational model of a possible trametinib-GPRC5A interaction, which remains experimentally unvalidated. GPRC5A\u207aEpi is a malignancy-associated epithelial state in CRC, and GPRC5A is functionally important for malignant phenotypes in the tested models. Its inferred relationships with POSTN\u207a fibroblasts and the trametinib findings should be regarded as hypothesis-generating pending functional crosstalk, direct-binding, and therapeutic validation.",
   "authors": "Weichun Tang, Pengchen Xu, Shengli Wang, Guizhen Su, Qiang Li, Biao Gu, Nannan Wang",
   "date": "2026-09-11",
@@ -319,5 +254,110 @@
   "title": "Transferring Cancer Drug Response Prediction Through Multi-Label Heuristic Domain Adaptation.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42747924/",
   "why": "Directly proposes a domain-adaptation model for predicting cancer drug response from cell lines to patients, core to drug response prediction interest."
+ },
+ {
+  "abstract": "Resolving the binding problem, i.e., how we integrate perceptual features in space and time to perceive objects, people and events as coherent wholes instead of masses of free-floating features, has been a central goal of cognitive scientists for decades. Conjunction errors occur whenever features are mis-bound leading to illusory percepts that were not actually presented. A specific kind of Rapid Serial Visual Presentation experiment induces temporal illusory conjunctions, called distractor intrusion errors. Despite these errors being well-established, current theories and models provide limited explanations. We present the 2-feature Simultaneous Type/Serial Token (2f-ST2) Model, the latest addition to the family of ST2-models, which simulates the most important behavioural and electrophysiological distractor intrusion findings. These include response distributions, reaction time patterns, and evoked electrophysiology responses. Importantly, we simulate these results across diverse empirical paradigms, implementing a range of stimulus sets, temporal dynamics, and involving multiple responses after each trial, without needing to modify our model's architecture or core parameters. Our findings are discussed in relation to theories of selective attention and working-memory binding. We argue that the 2f-ST2 model is more parsimonious than the leading theory of distractor-intrusions (the focussed-attention/sophisticated-guessing model), since it uses only a single binding mechanism, implying that correct bindings are simply fortunate conjunctions. The 2f-ST2 model further makes predictions for stimulus-competition, subjective-visibility and human electrophysiology. In summary, the ST2-model is a general framework for understanding how perception, temporal attention and working-memory interact, and the 2f-ST2 model extends the framework to distractor intrusions, thus explaining temporal feature binding.",
+  "authors": "Hosseini, M.; Zivony, A.; Eimer, M.; Wyble, B.; Bowman, H.",
+  "date": "2026-09-13",
+  "doi": "10.64898/2026.09.07.749788",
+  "highlights": [],
+  "key": "doi:10.64898/2026.09.07.749788",
+  "pmid": "",
+  "read_first": [],
+  "score": 1,
+  "scored_at": "2026-09-18T10:38:39.238857+00:00",
+  "source": "bioRxiv",
+  "title": "The 2-feature Simultaneous Type/ Serial Token Model of temporal feature conjunctions: Successes are merely fortunate conjunctions.",
+  "url": "https://doi.org/10.64898/2026.09.07.749788",
+  "why": "This is a cognitive science model of visual attention and temporal binding, unrelated to clinical trials or drug response prediction."
+ },
+ {
+  "abstract": "Drug repurposing offers a cost-effective path to new therapies for triple-negative breast cancer (TNBC), a subtype with limited targeted treatment options. We present PRECISION, a framework integrating transcription factor (TF) regulatory networks, protein-protein interactions, and drug-target edges into a heterogeneous graph neural network (GNN) to identify TFs mediating drug sensitivity and prioritize repurposing candidates. The knowledge graph has 23,498 nodes and approximately 830,000 edges from CollecTRI, OmniPath and the PRISM screen. In a fair cell-line hold-out evaluation, the GNN matches ML baselines in global prediction (Pearson r = 0.76). Per-drug mechanistic attributions via Integrated Gradients on the trained GNN, replicated across three independent training seeds and robust to baseline choice (Spearman's rho = 0.94 between the mean and the random Gaussian baselines), highlight stress-response (CREB3L1), epithelial-mesenchymal transition (EMT; KLF8, ZEB1), stromal/TNBC-specific (AEBP1, MZF1), and epithelial (SPDEF) regulators as stable mediators of drug response. Multi-cohort validation in SCAN-B (n = 7,397), METABRIC (n = 1,979), and TCGA-BRCA (n = 1,072) shows that predicted drug sensitivity is associated with overall survival in 623 drugs in SCAN-B and 74 in METABRIC (FDR < 0.05). Fisher's meta-analysis identifies 551 drugs at FDR < 0.05, validated by positive controls paclitaxel (p_adj = 8.6x10-3), docetaxel (3.1x10-2), epirubicin (3.2x10-6), and talazoparib (1.4x10-4). Paired Wilcoxon tests in 39 AURORA-US patients with matched primary and metastatic samples confirm that 4 of the 10 IG-identified TFs (CREB3L1, KLF8, AEBP1, SPDEF) are significantly altered during metastatic progression after Bonferroni correction. An explicit rule applied to the PAM50-adjusted Cox multivariate results (penalizer = 0.1) selects seven candidates (osimertinib, saracatinib, erlotinib, brigatinib, pelitinib, entinostat, trametinib), revealing pharmacological convergence on the EGFR signaling axis.",
+  "authors": "Fernandez-Lozano, C.; Ferreiro, D.; V.-del-Rio, P.",
+  "date": "2026-09-14",
+  "doi": "10.64898/2026.09.08.750045",
+  "highlights": [
+   {
+    "note": "core drug response prediction model",
+    "quote": "heterogeneous graph neural network (GNN) to identify TFs mediating drug sensitivity and prioritize repurposing candidates"
+   },
+   {
+    "note": "links drug response prediction to clinical outcomes",
+    "quote": "predicted drug sensitivity is associated with overall survival in 623 drugs in SCAN-B and 74 in METABRIC (FDR < 0.05)"
+   },
+   {
+    "note": "benchmark performance for drug sensitivity prediction",
+    "quote": "the GNN matches ML baselines in global prediction (Pearson r = 0.76)"
+   }
+  ],
+  "key": "doi:10.64898/2026.09.08.750045",
+  "pmid": "",
+  "read_first": [
+   "Methods: GNN architecture and Integrated Gradients attribution",
+   "Multi-cohort validation results (SCAN-B, METABRIC, TCGA-BRCA)",
+   "Table with Cox multivariate candidate selection"
+  ],
+  "score": 6,
+  "scored_at": "2026-09-18T10:38:44.409066+00:00",
+  "source": "bioRxiv",
+  "title": "Heterogeneous graph neural networks with biological prior knowledge for interpretable drug repurposing in triple-negative breast cancer",
+  "url": "https://doi.org/10.64898/2026.09.08.750045",
+  "why": "Focuses on drug response prediction via GNN and biological interpretability, with survival-based validation, but not clinical trial outcome/success prediction per se."
+ },
+ {
+  "abstract": "Up to 40% of patients with estrogen receptor positive breast cancer will experience relapse, either while on endocrine therapy (ET) or after ET is completed. A major contributor to ET failure is the presence of ET-insensitive cell populations within tumors. Here, we developed an analytical pipeline to systematically identify and target these populations by integrating single-cell RNA sequencing of ER+ tumors from the FELINE clinical trial with functional validation in a panel of patient-derived xenograft organoid models. We found that ET-insensitive cells are detected in all tumors regardless of clinical response and exhibit higher transcriptional heterogeneity than ET-sensitive populations. Using our pipeline, we identified and validated new therapeutic options that target patient-specific and shared ET-insensitive populations. Our integrated workflow provides a robust platform for identifying and targeting ET-insensitive cells and offers a translational framework to develop precision medicine approaches to improve outcome in breast cancer patients.",
+  "authors": "Semina, S.; Huggins, R. J.; Zhao, H.; Yanagihara, K.; Sheinin, M.; Macias, V.; Alani, F.; Feferman, L.; Kajdacsy-Balla, A. A.; Tonetti, D.; Hoskins, K.; Frasor, J.; Coloff, J. L.",
+  "date": "2026-09-16",
+  "doi": "10.64898/2026.09.10.750719",
+  "highlights": [
+   {
+    "note": "uses clinical trial data but for biology, not outcome prediction",
+    "quote": "integrating single-cell RNA sequencing of ER+ tumors from the FELINE clinical trial with functional validation"
+   },
+   {
+    "note": "precision medicine angle, tangential to trial success prediction",
+    "quote": "identified and validated new therapeutic options that target patient-specific and shared ET-insensitive populations"
+   }
+  ],
+  "key": "doi:10.64898/2026.09.10.750719",
+  "pmid": "",
+  "read_first": [
+   "Methods: single-cell RNA sequencing pipeline",
+   "Results: functional validation in PDX organoids"
+  ],
+  "score": 4,
+  "scored_at": "2026-09-18T10:38:48.082955+00:00",
+  "source": "bioRxiv",
+  "title": "Integrative pipeline to profile and target endocrine therapy-insensitive cell populations in ER+ breast cancer",
+  "url": "https://doi.org/10.64898/2026.09.10.750719",
+  "why": "Focuses on single-cell profiling and drug targeting of therapy-insensitive breast cancer cells, not on predictive modeling of trial outcomes or drug response."
+ },
+ {
+  "abstract": "Murine efficacy models inform advancement of preclinical tuberculosis treatment regimens to human clinical testing. A recent human Phase 2 trial was terminated early because investigational regimens (4-months of PaBQU or DBQU) did not meet the treatment shortening criteria outlined in the Target Regimen Profile ([&le;] 3 months). We queried whether a factor leading to this early termination may have been lesional liability, meaning slow or diminished onset of effect in the caseum of complex lung lesions. We conducted a translational study, comparing the easy-to-treat BALB/c mouse, lacking complex lesions, to the hard-to-treat C3HeB/FeJ mouse that develops complex human-like lesions. We evaluated traditional and novel pharmacodynamic markers (colony forming units and RS ratio), relapse outcomes and ex vivo caseum pharmacokinetics. PaBQU and DBQU were slower to elicit bactericidal activity, RS ratio activity and prevent relapse in the C3HeB/FeJ mouse than the BALB/c mouse. A reference regimen (BPaMZ) had less lesional liability than PaBQU and DBQU. Fewer drugs in PaBQU were projected to achieve target attainment in caseum compared to BPaMZ, particularly early in treatment due to slow accumulation of bedaquiline in caseum. Here, we demonstrated application of a multi-modality pharmacokinetic-pharmacodynamic analysis that compared regimen activity in the hard-to-treat C3HeB/FeJ and easy-to-treat BALB/c mouse models, identifying lesional liability of PaBQU and DBQU. Systematic interrogation of additional diverse regimens is needed to determine the value of preclinical lesional liability as a means of predicting clinical treatment shortening activity.",
+  "authors": "Walter, N. D.; Massoudi, L. M.; Bauman, A. A.; Benedict, N. D.; Peroutka-Bigus, N.; Ramey, M. E.; Al Mubarak, R.; Pauly, S.; Kaya, F.; Chaba, L.; Zimmerman, M. D.; Flood, D.; Hermann, D.; Mdluli, K.; Holtzman, D.; Savic, R.; Sarathy, J. P.; Robertson, G. T.",
+  "date": "2026-09-17",
+  "doi": "10.64898/2026.09.15.751879",
+  "highlights": [
+   {
+    "note": "links preclinical findings to clinical trial failure",
+    "quote": "A recent human Phase 2 trial was terminated early because investigational regimens (4-months of PaBQU or DBQU) did not meet the treatment shortening criteria"
+   },
+   {
+    "note": "proposes a biomarker for predicting trial success",
+    "quote": "determine the value of preclinical lesional liability as a means of predicting clinical treatment shortening activity"
+   }
+  ],
+  "key": "doi:10.64898/2026.09.15.751879",
+  "pmid": "",
+  "read_first": [
+   "Discussion: predicting clinical treatment shortening activity",
+   "Methods: pharmacokinetic-pharmacodynamic analysis"
+  ],
+  "score": 3,
+  "scored_at": "2026-09-18T10:38:58.555794+00:00",
+  "source": "bioRxiv",
+  "title": "Comprehensive preclinical reevaluation of PaBQU and DBQU regimens identifies lesional liability in hard-to-treat forms of tuberculosis",
+  "url": "https://doi.org/10.64898/2026.09.15.751879",
+  "why": "This is preclinical mouse model TB pharmacology explaining a trial failure retrospectively, not a computational trial outcome prediction or drug response model."
  }
 ]
