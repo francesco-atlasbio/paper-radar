@@ -1,33 +1,5 @@
 [
  {
-  "abstract": "Colorectal cancer (CRC) exhibits marked cellular heterogeneity, and the cellular context of malignancy-associated epithelial programs remains incompletely defined. We integrated 2,993 CRC samples spanning bulk RNA-seq (n\u2009=\u20092,568; two OS/RFS cohorts), scRNA-seq (281,961 cells/152 specimens), spatial transcriptomics (n\u2009=\u20096), and proteomics (n\u2009=\u2009267). Analyses included single-cell integration/annotation, GSVA/HALLMARK, interactome, pseudotime, and ligand-receptor mapping; functional CRISPR assays, EMT immunoblotting, and xenografts; TF profiling (SCENIC/JASPAR/ChIP-qPCR); and exploratory drug-response prediction (OncoPredict), cell-sensitivity assays, and docking/MD modeling. We constructed a stage-stratified single-cell atlas and resolved eleven malignant epithelial subsets, characterizing Epi_4 as late-stage-enriched with EMT, hypoxia, and inflammatory programs and adverse OS/RFS. GPRC5A marked this subset, which we define as GPRC5A+Epi; its expression rose from stage I\u2192IV and was associated with poor outcomes across cohorts, with concordant spatial/proteomic observations. GPRC5A perturbation affected CRC proliferation, migration/invasion, EMT, and xenograft tumorigenicity, supporting a functionally important role in the tested models. SCENIC and ChIP-qPCR supported FOSL1 as an upstream regulator that occupies the GPRC5A promoter. Spatial and ligand-receptor analyses predicted close association and potentially reciprocal signaling between GPRC5A+Epi and POSTN+fibroblasts (COL1A1-SDC4, COL1A1/1A2-ITGA2/ITGB1, PPIA-BSG); concurrent high GPRC5A+Epi/POSTN+Fib signatures were associated with inferior OS/RFS. Drug-response analyses identified an association between GPRC5A status and trametinib sensitivity. Docking/MD produced a computational model of a possible trametinib-GPRC5A interaction, which remains experimentally unvalidated. GPRC5A\u207aEpi is a malignancy-associated epithelial state in CRC, and GPRC5A is functionally important for malignant phenotypes in the tested models. Its inferred relationships with POSTN\u207a fibroblasts and the trametinib findings should be regarded as hypothesis-generating pending functional crosstalk, direct-binding, and therapeutic validation.",
-  "authors": "Weichun Tang, Pengchen Xu, Shengli Wang, Guizhen Su, Qiang Li, Biao Gu, Nannan Wang",
-  "date": "2026-09-11",
-  "doi": "10.1053/j.gastro.2022.07.076",
-  "highlights": [
-   {
-    "note": "only drug-response-related component, framed as exploratory",
-    "quote": "exploratory drug-response prediction (OncoPredict), cell-sensitivity assays, and docking/MD modeling"
-   },
-   {
-    "note": "specific drug response finding, hypothesis-generating",
-    "quote": "Drug-response analyses identified an association between GPRC5A status and trametinib sensitivity"
-   }
-  ],
-  "key": "doi:10.1053/j.gastro.2022.07.076",
-  "pmid": "42723078",
-  "read_first": [
-   "Results: drug-response analyses (trametinib/GPRC5A section)",
-   "Limitations"
-  ],
-  "score": 3,
-  "scored_at": "2026-09-12T06:15:30.492302+00:00",
-  "source": "PubMed",
-  "title": "Multi-omics characterization of a GPRC5A+ epithelial subpopulation associated with malignant features in colorectal cancer.",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/42723078/",
-  "why": "This is primarily a multi-omics cancer biology study on GPRC5A in CRC, with only a minor exploratory drug-response prediction component (OncoPredict/trametinib) tangential to core interests."
- },
- {
   "abstract": "Interpreting infrequent somatic variants remains a challenge in cancer genomics. We developed CRISPR-VUS, a framework that uses public Cancer Dependency Map data to identify Dependency-Associated Mutations (DAMs) - variants linked to increased host-gene dependency - with resolution extending to singleton events. Analysis of 977 cell lines across 36 cancer types identified 2,376 DAMs in 1,383 genes, including 1,260 not established as cancer drivers. DAM-bearing genes converge on oncogenic networks, while recurrence in histology-matched tumours, functional-impact predictions, tractability and pharmacological associations enable systematic prioritisation. Prime editing showed that the prioritised NSCLC-specific RTN4IP1-A80T DAM conferred a significant competitive growth advantage in a lung epithelial model, nominating a candidate driver allele. Exploratory pharmacological testing showed a greater maximal response to istaroxime in ATP1B3-I189M-bearing than in ATP1B3-wild-type cells. CRISPR-VUS combines dependency-based rare-variant discovery with evidence-guided prioritisation to nominate candidate drivers, therapeutic targets and drug-repositioning hypotheses. Interactive results are available at https://vus-portal.fht.org/.",
   "authors": "Savino, A.; Oikonomou, A.; Perrone, F.; De Lucia, R. R.; De Pietri, L.; Belattar, Y.; Brown, L.; Grau, M. L.; McCarten, K.; Najgebauer, H.; Perron, U.; Azzolin, L.; Livanova, A.; Cremaschi, P.; Lopez-Bigas, N.; Sottoriva, A.; Coelho, M. A.; IORIO, F.",
   "date": "2026-09-12",
@@ -75,38 +47,6 @@
   "title": "TMEDRP: Decoding Tumor-Intrinsic and Microenvironmental Signatures for Clinical Drug Response Prediction.",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42730656/",
   "why": "Directly proposes a novel model for clinical drug response prediction using TME-aware transfer learning, core to this researcher's interests."
- },
- {
-  "abstract": "Colorectal cancer (CRC) exhibits marked cellular heterogeneity, and the cellular context of malignancy-associated epithelial programs remains incompletely defined. We integrated 2,993 CRC samples spanning bulk RNA-seq (n\u2009=\u20092,568; two OS/RFS cohorts), scRNA-seq (281,961 cells/152 specimens), spatial transcriptomics (n\u2009=\u20096), and proteomics (n\u2009=\u2009267). Analyses included single-cell integration/annotation, GSVA/HALLMARK, interactome, pseudotime, and ligand-receptor mapping; functional CRISPR assays, EMT immunoblotting, and xenografts; TF profiling (SCENIC/JASPAR/ChIP-qPCR); and exploratory drug-response prediction (OncoPredict), cell-sensitivity assays, and docking/MD modeling. We constructed a stage-stratified single-cell atlas and resolved eleven malignant epithelial subsets, characterizing Epi_4 as late-stage-enriched with EMT, hypoxia, and inflammatory programs and adverse OS/RFS. GPRC5A marked this subset, which we define as GPRC5A+Epi; its expression rose from stage I\u2192IV and was associated with poor outcomes across cohorts, with concordant spatial/proteomic observations. GPRC5A perturbation affected CRC proliferation, migration/invasion, EMT, and xenograft tumorigenicity, supporting a functionally important role in the tested models. SCENIC and ChIP-qPCR supported FOSL1 as an upstream regulator that occupies the GPRC5A promoter. Spatial and ligand-receptor analyses predicted close association and potentially reciprocal signaling between GPRC5A+Epi and POSTN+fibroblasts (COL1A1-SDC4, COL1A1/1A2-ITGA2/ITGB1, PPIA-BSG); concurrent high GPRC5A+Epi/POSTN+Fib signatures were associated with inferior OS/RFS. Drug-response analyses identified an association between GPRC5A status and trametinib sensitivity. Docking/MD produced a computational model of a possible trametinib-GPRC5A interaction, which remains experimentally unvalidated. GPRC5A\u207aEpi is a malignancy-associated epithelial state in CRC, and GPRC5A is functionally important for malignant phenotypes in the tested models. Its inferred relationships with POSTN\u207a fibroblasts and the trametinib findings should be regarded as hypothesis-generating pending functional crosstalk, direct-binding, and therapeutic validation.",
-  "authors": "Weichun Tang, Pengchen Xu, Shengli Wang, Guizhen Su, Qiang Li, Biao Gu, Nannan Wang",
-  "date": "2026-09-11",
-  "doi": "10.3390/cancers13236005",
-  "highlights": [
-   {
-    "note": "only drug-response-related component, framed as exploratory",
-    "quote": "exploratory drug-response prediction (OncoPredict), cell-sensitivity assays, and docking/MD modeling"
-   },
-   {
-    "note": "single drug-response link, not a predictive model",
-    "quote": "Drug-response analyses identified an association between GPRC5A status and trametinib sensitivity."
-   },
-   {
-    "note": "authors caveat drug-response finding as preliminary",
-    "quote": "should be regarded as hypothesis-generating pending functional crosstalk, direct-binding, and therapeutic validation"
-   }
-  ],
-  "key": "doi:10.3390/cancers13236005",
-  "pmid": "42723078",
-  "read_first": [
-   "Results: Drug-response analyses (OncoPredict/trametinib)",
-   "Discussion: hypothesis-generating caveats"
-  ],
-  "score": 3,
-  "scored_at": "2026-09-13T06:21:27.679651+00:00",
-  "source": "PubMed",
-  "title": "Multi-omics characterization of a GPRC5A+ epithelial subpopulation associated with malignant features in colorectal cancer.",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/42723078/",
-  "why": "This is primarily a multi-omics CRC biology study; drug-response prediction (OncoPredict, trametinib) is only a minor, exploratory, hypothesis-generating side finding."
  },
  {
   "abstract": "Artificial intelligence (AI) and machine learning (ML) now reach into every stage of AML care. Deep learning models read therapy-relevant mutations directly from bone marrow smears; automated flow cytometry gating reproduces expert calls in under a minute; and the first AI pathology devices for hematology have cleared regulatory review and entered clinical use. Beyond diagnosis, ML captures the age-dependent weight of individual mutations that categorical ELN scoring misses, drug response prediction for venetoclax-azacitidine has been validated across multiple external cohorts, and large language models are being tested for tumor board support and trial matching. The next wave, from clonal architecture modeling and single-cell foundation models to digital twins and reinforcement learning for adaptive dosing, could move AML management from reactive toward predictive, evolution-aware care. This review departs from existing AI-in-hematology surveys in three ways: we (i) restrict the scope to AML and organize the field around clinical decision points rather than technology categories, (ii) grade every tool on a five-tier author-defined clinical readiness level (CRL-AML 1-5), which exposes hundreds of models clustered at CRL-AML 1-2 and none yet in prospective clinical evaluation, and (iii) close with a numbered three-year agenda naming the consortia, datasets, and pragmatic trials needed to carry the field from publication to practice.",
@@ -359,5 +299,49 @@
   "title": "Comprehensive preclinical reevaluation of PaBQU and DBQU regimens identifies lesional liability in hard-to-treat forms of tuberculosis",
   "url": "https://doi.org/10.64898/2026.09.15.751879",
   "why": "This is preclinical mouse model TB pharmacology explaining a trial failure retrospectively, not a computational trial outcome prediction or drug response model."
+ },
+ {
+  "abstract": "Background: Sepsis is a life-threatening condition characterized by organ dysfunction resulting from a dysregulated host response to infection. It is a leading cause of in-hospital mortality. The multicenter Acute Respiratory Distress Syndrome Network Statins for Acutely Injured Lungs from Sepsis (ARDSNet-SAILS) trial found that rosuvastatin (RS) did not improve clinical outcomes in patients with sepsis-associated ARDS and may increase hepatic and renal dysfunction. We evaluated associations of plasma cholesterol ester transfer protein (CETP) activity and Serum Amyloid A (SAA) levels with survival and clinical outcomes using plasma samples and clinical data from ARDSNet-SAILS trial. Methods: This secondary analysis included clinical data and plasma samples from 471 ARDSNet-SAILS participants, randomized to placebo (PL) or RS. Plasma CETP activities and SAA levels were measured at enrollment (Day 0, n=466) and Days 3 (n=425) and 6 (n=342). Treatment effects were assessed using linear mixed models, and associations with survival and outcomes using Cox, linear, beta-binomial, and zero-inflated negative binomial regression models. Results: CETP activities were significantly higher in the survivors compared to non-survivors on days 0, 3, and 6 of analysis, in both the treatment groups (p<0.01). Higher Day 0 and Day 3 CETP activities in PL patients independently predicted improved survival, with every 3-unit increase in activity associated with 18 to 19% lower mortality risk. In the RS treatment group, higher CETP at Day 0, Day 3, and Day 6 was significantly associated with reduced hazard of mortality (p=0.039, 0.005, and 0.022, and hazard ratios = 0.87, 0.82, and 0.80, respectively, for Days 0, 3, and 6). Higher CETP values on Days 3 and 6 were also significantly negatively associated with APACHE score and positively associated with increased renal dysfunction-free days (p=0.001). Plasma SAA levels decreased significantly over time in both treatment groups (p<0.0001). In the PL group, higher plasma SAA levels were associated with a lower hazard of mortality. Accordingly, survivors had significantly higher plasma SAA levels than non-survivors at Day 0 (p=0.005). Higher SAA levels at Days 0 and 3 were also inversely correlated with APACHE scores, while Day 0 SAA levels were positively associated with overall organ dysfunction-free days (p=0.002). In contrast, in the RS group, higher plasma SAA levels were associated with an increased hazard of mortality, reaching statistical significance at Day 6 (p<0.01). Despite this, higher SAA levels in the RS group were positively associated with renal dysfunction-free days (Day 3, p=0.004; Day 6, p=0.006), hepatic dysfunction-free days (Days 0, 3, and 6; all p[&le;]0.001), and overall organ dysfunction-free days (Day 0, p=0.017; Days 3 and 6, both p<0.001). Analysis of SAA levels in FPLC fractions demonstrated higher SAA levels in the HDL fraction among survivors compared with non-survivors in the PL group on Days 0 and 3; however, this difference was not observed in the RS group. Conclusion: Taken together, these findings identify plasma CETP activities and early SAA levels as stable prognostic biomarkers associated with improved survival and reduced disease severity in sepsis. However, while both CETP activity and SAA levels were unaffected by RS treatment, it appeared to modify the association between SAA and mortality.",
+  "authors": "Ji, A.; Abu, O.; Meredith, L. W.; Yu, H.; Voy, C. H.; Bruno, M. E. C.; Gordon, S. M.; Hawk, G. S.; Starr, M. E.; Shridas, P.",
+  "date": "2026-09-17",
+  "doi": "10.64898/2026.09.14.751535",
+  "highlights": [],
+  "key": "doi:10.64898/2026.09.14.751535",
+  "pmid": "",
+  "read_first": [],
+  "score": 3,
+  "scored_at": "2026-09-19T10:25:34.434576+00:00",
+  "source": "bioRxiv",
+  "title": "Preserved CETP Activity and Early Serum Amyloid A are Associated with Improved Outcomes in Sepsis-Associated ARDS",
+  "url": "https://doi.org/10.64898/2026.09.14.751535",
+  "why": "This is a biomarker prognostic study in sepsis/ARDS, not focused on ML-based trial outcome prediction or drug response modeling."
+ },
+ {
+  "abstract": "Artificial intelligence-driven drug design (AIDD) is increasingly transforming cancer drug discovery, but its applications are often considered as individual computational tasks rather than interconnected stages of the drug discovery pipeline. This mini-review addresses this gap by firstly identifying the following four interconnected stages of anticancer drug development (1) target identification and biomarker-guided prioritization (2), structure-based and generative molecular design (3), perturbational mechanism-of-action assessment, and (4) drug response, resistance, and combination prioritization. It, secondly, describes how AI can be integrated across these four stages in a design-test-refine workflow where AI-generated predictions are progressively evaluated and refined through experimental and patient-relevant evidence. We emphasize that the role of AI in predicting target dependency, molecular activity, mechanism-of-action, or drug response should be to guide rather than replace experimental discovery or clinical judgment. Key limitations to the application of AIDD in cancer are highlighted, including in training and benchmarking data, in accounting for biological heterogeneity, as well as in model generalization. Importantly, robust validation across increasingly complex cancer models is required and it is proposed that AIDD should be used to prioritize testable treatment predictions. Ultimately, translationally useful AIDD workflows should move beyond isolated predictions toward iterative, biologically informed therapeutic development, to form a holistic design-test-refine workflow.",
+  "authors": "Jinming Bai, Jessica Sarah Faure, Tawfeeq Ahmed Khalfe, Rongqin Huang, Carly Ann Burmeister, Annick van Niekerk, Sharon Prince",
+  "date": "2026-09-18",
+  "doi": "10.1016/j.patrec.2025.10.016",
+  "highlights": [
+   {
+    "note": "closest link to drug response prediction interest",
+    "quote": "drug response, resistance, and combination prioritization"
+   },
+   {
+    "note": "relevant to validation of predictive models",
+    "quote": "robust validation across increasingly complex cancer models is required"
+   }
+  ],
+  "key": "doi:10.1016/j.patrec.2025.10.016",
+  "pmid": "42756558",
+  "read_first": [
+   "Key limitations section",
+   "Design-test-refine workflow description"
+  ],
+  "score": 4,
+  "scored_at": "2026-09-19T10:25:38.582571+00:00",
+  "source": "PubMed",
+  "title": "Integrating artificial intelligence across the cancer drug discovery pipeline using a design-test-refine workflow.",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42756558/",
+  "why": "A conceptual review of AI across cancer drug discovery stages, only tangentially touching drug response prediction, without clinical trial outcome or success prediction focus."
  }
 ]
