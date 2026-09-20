@@ -1,54 +1,5 @@
 [
  {
-  "abstract": "Interpreting infrequent somatic variants remains a challenge in cancer genomics. We developed CRISPR-VUS, a framework that uses public Cancer Dependency Map data to identify Dependency-Associated Mutations (DAMs) - variants linked to increased host-gene dependency - with resolution extending to singleton events. Analysis of 977 cell lines across 36 cancer types identified 2,376 DAMs in 1,383 genes, including 1,260 not established as cancer drivers. DAM-bearing genes converge on oncogenic networks, while recurrence in histology-matched tumours, functional-impact predictions, tractability and pharmacological associations enable systematic prioritisation. Prime editing showed that the prioritised NSCLC-specific RTN4IP1-A80T DAM conferred a significant competitive growth advantage in a lung epithelial model, nominating a candidate driver allele. Exploratory pharmacological testing showed a greater maximal response to istaroxime in ATP1B3-I189M-bearing than in ATP1B3-wild-type cells. CRISPR-VUS combines dependency-based rare-variant discovery with evidence-guided prioritisation to nominate candidate drivers, therapeutic targets and drug-repositioning hypotheses. Interactive results are available at https://vus-portal.fht.org/.",
-  "authors": "Savino, A.; Oikonomou, A.; Perrone, F.; De Lucia, R. R.; De Pietri, L.; Belattar, Y.; Brown, L.; Grau, M. L.; McCarten, K.; Najgebauer, H.; Perron, U.; Azzolin, L.; Livanova, A.; Cremaschi, P.; Lopez-Bigas, N.; Sottoriva, A.; Coelho, M. A.; IORIO, F.",
-  "date": "2026-09-12",
-  "doi": "10.64898/2026.01.20.700565",
-  "highlights": [],
-  "key": "doi:10.64898/2026.01.20.700565",
-  "pmid": "",
-  "read_first": [],
-  "score": 2,
-  "scored_at": "2026-09-13T06:21:18.353051+00:00",
-  "source": "bioRxiv",
-  "title": "CRISPR-enhanced assessment of variants of unknown significance nominates oncology therapeutic targets and drug repositioning opportunities",
-  "url": "https://doi.org/10.64898/2026.01.20.700565",
-  "why": "This is a CRISPR-based cancer dependency and variant-annotation framework, unrelated to clinical trial outcome or drug response prediction modeling."
- },
- {
-  "abstract": "Clinical drug response prediction is constrained by the paucity of patient data, forcing a reliance on in vitro cell line models. Current transfer learning-based methods typically focus on learning domain-invariant representations, but often overlook the critical role of tumor microenvironment (TME) during cross-domain translation. Given that TME discrepancies between in vitro and in vivo settings are critical factors of therapeutic resistance, explicitly modeling the TME is essential to bridge the gap between preclinical models and patient-specific responses. We propose TMEDRP, a novel two-stage learning framework that integrates tumor-intrinsic signatures and TME-specific components for enhanced clinical drug response prediction. TMEDRP introduces TME influences via a pathway-informed disentanglement strategy, a neural co-expression module, and an uncertainty-driven adaptation mechanism. Extensive benchmarks demonstrate that TMEDRP outperforms existing state-of-the-art methods. Importantly, it exhibits promising zero-shot generalization across unseen cancer lineages and novel compounds, suggesting its robustness across diverse scenarios. Furthermore, quantitative analysis of the model's latent embeddings uncovers key tumor-intrinsic pathways and extrinsic TME factors that distinguish drug-sensitive from resistant cohorts. The identified shared and drug-specific molecular markers align with established clinical mechanisms, supporting the model's biological interpretability and clinical utility. The code and results are available at https://github.com/kybinn/TMEDRP.",
-  "authors": "Yabin Kuang, Haochen Zhao, Yi Luo, Teng Sun, Hongdong Li, Guihua Duan, Jianxin Wang",
-  "date": "2026-09-12",
-  "doi": "10.1093/bioinformatics/btag680",
-  "highlights": [
-   {
-    "note": "core method for drug response prediction",
-    "quote": "TMEDRP, a novel two-stage learning framework that integrates tumor-intrinsic signatures and TME-specific components for enhanced clinical drug response prediction"
-   },
-   {
-    "note": "generalization relevant to trial outcome prediction",
-    "quote": "exhibits promising zero-shot generalization across unseen cancer lineages and novel compounds"
-   },
-   {
-    "note": "interpretability linking mechanism to response",
-    "quote": "quantitative analysis of the model's latent embeddings uncovers key tumor-intrinsic pathways and extrinsic TME factors that distinguish drug-sensitive from resistant cohorts"
-   }
-  ],
-  "key": "doi:10.1093/bioinformatics/btag680",
-  "pmid": "42730656",
-  "read_first": [
-   "Methods: pathway-informed disentanglement and uncertainty-driven adaptation",
-   "Benchmarks/Results section comparing to state-of-the-art",
-   "Zero-shot generalization experiments"
-  ],
-  "score": 8,
-  "scored_at": "2026-09-13T06:21:22.440376+00:00",
-  "source": "PubMed",
-  "title": "TMEDRP: Decoding Tumor-Intrinsic and Microenvironmental Signatures for Clinical Drug Response Prediction.",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/42730656/",
-  "why": "Directly proposes a novel model for clinical drug response prediction using TME-aware transfer learning, core to this researcher's interests."
- },
- {
   "abstract": "Artificial intelligence (AI) and machine learning (ML) now reach into every stage of AML care. Deep learning models read therapy-relevant mutations directly from bone marrow smears; automated flow cytometry gating reproduces expert calls in under a minute; and the first AI pathology devices for hematology have cleared regulatory review and entered clinical use. Beyond diagnosis, ML captures the age-dependent weight of individual mutations that categorical ELN scoring misses, drug response prediction for venetoclax-azacitidine has been validated across multiple external cohorts, and large language models are being tested for tumor board support and trial matching. The next wave, from clonal architecture modeling and single-cell foundation models to digital twins and reinforcement learning for adaptive dosing, could move AML management from reactive toward predictive, evolution-aware care. This review departs from existing AI-in-hematology surveys in three ways: we (i) restrict the scope to AML and organize the field around clinical decision points rather than technology categories, (ii) grade every tool on a five-tier author-defined clinical readiness level (CRL-AML 1-5), which exposes hundreds of models clustered at CRL-AML 1-2 and none yet in prospective clinical evaluation, and (iii) close with a numbered three-year agenda naming the consortia, datasets, and pragmatic trials needed to carry the field from publication to practice.",
   "authors": "Federico De Marchi, Giulia Ciotti, Alessandro Atanasio, Giovanni Pascarella, Alessandra Sperotto, Michele Gottardi",
   "date": "2026-09-15",
