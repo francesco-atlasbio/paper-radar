@@ -147,39 +147,6 @@
   "why": "Directly proposes a domain-adaptation model for predicting cancer drug response from cell lines to patients, core to drug response prediction interest."
  },
  {
-  "abstract": "Drug repurposing offers a cost-effective path to new therapies for triple-negative breast cancer (TNBC), a subtype with limited targeted treatment options. We present PRECISION, a framework integrating transcription factor (TF) regulatory networks, protein-protein interactions, and drug-target edges into a heterogeneous graph neural network (GNN) to identify TFs mediating drug sensitivity and prioritize repurposing candidates. The knowledge graph has 23,498 nodes and approximately 830,000 edges from CollecTRI, OmniPath and the PRISM screen. In a fair cell-line hold-out evaluation, the GNN matches ML baselines in global prediction (Pearson r = 0.76). Per-drug mechanistic attributions via Integrated Gradients on the trained GNN, replicated across three independent training seeds and robust to baseline choice (Spearman's rho = 0.94 between the mean and the random Gaussian baselines), highlight stress-response (CREB3L1), epithelial-mesenchymal transition (EMT; KLF8, ZEB1), stromal/TNBC-specific (AEBP1, MZF1), and epithelial (SPDEF) regulators as stable mediators of drug response. Multi-cohort validation in SCAN-B (n = 7,397), METABRIC (n = 1,979), and TCGA-BRCA (n = 1,072) shows that predicted drug sensitivity is associated with overall survival in 623 drugs in SCAN-B and 74 in METABRIC (FDR < 0.05). Fisher's meta-analysis identifies 551 drugs at FDR < 0.05, validated by positive controls paclitaxel (p_adj = 8.6x10-3), docetaxel (3.1x10-2), epirubicin (3.2x10-6), and talazoparib (1.4x10-4). Paired Wilcoxon tests in 39 AURORA-US patients with matched primary and metastatic samples confirm that 4 of the 10 IG-identified TFs (CREB3L1, KLF8, AEBP1, SPDEF) are significantly altered during metastatic progression after Bonferroni correction. An explicit rule applied to the PAM50-adjusted Cox multivariate results (penalizer = 0.1) selects seven candidates (osimertinib, saracatinib, erlotinib, brigatinib, pelitinib, entinostat, trametinib), revealing pharmacological convergence on the EGFR signaling axis.",
-  "authors": "Fernandez-Lozano, C.; Ferreiro, D.; V.-del-Rio, P.",
-  "date": "2026-09-14",
-  "doi": "10.64898/2026.09.08.750045",
-  "highlights": [
-   {
-    "note": "core drug response prediction model",
-    "quote": "heterogeneous graph neural network (GNN) to identify TFs mediating drug sensitivity and prioritize repurposing candidates"
-   },
-   {
-    "note": "links drug response prediction to clinical outcomes",
-    "quote": "predicted drug sensitivity is associated with overall survival in 623 drugs in SCAN-B and 74 in METABRIC (FDR < 0.05)"
-   },
-   {
-    "note": "benchmark performance for drug sensitivity prediction",
-    "quote": "the GNN matches ML baselines in global prediction (Pearson r = 0.76)"
-   }
-  ],
-  "key": "doi:10.64898/2026.09.08.750045",
-  "pmid": "",
-  "read_first": [
-   "Methods: GNN architecture and Integrated Gradients attribution",
-   "Multi-cohort validation results (SCAN-B, METABRIC, TCGA-BRCA)",
-   "Table with Cox multivariate candidate selection"
-  ],
-  "score": 6,
-  "scored_at": "2026-09-18T10:38:44.409066+00:00",
-  "source": "bioRxiv",
-  "title": "Heterogeneous graph neural networks with biological prior knowledge for interpretable drug repurposing in triple-negative breast cancer",
-  "url": "https://doi.org/10.64898/2026.09.08.750045",
-  "why": "Focuses on drug response prediction via GNN and biological interpretability, with survival-based validation, but not clinical trial outcome/success prediction per se."
- },
- {
   "abstract": "Up to 40% of patients with estrogen receptor positive breast cancer will experience relapse, either while on endocrine therapy (ET) or after ET is completed. A major contributor to ET failure is the presence of ET-insensitive cell populations within tumors. Here, we developed an analytical pipeline to systematically identify and target these populations by integrating single-cell RNA sequencing of ER+ tumors from the FELINE clinical trial with functional validation in a panel of patient-derived xenograft organoid models. We found that ET-insensitive cells are detected in all tumors regardless of clinical response and exhibit higher transcriptional heterogeneity than ET-sensitive populations. Using our pipeline, we identified and validated new therapeutic options that target patient-specific and shared ET-insensitive populations. Our integrated workflow provides a robust platform for identifying and targeting ET-insensitive cells and offers a translational framework to develop precision medicine approaches to improve outcome in breast cancer patients.",
   "authors": "Semina, S.; Huggins, R. J.; Zhao, H.; Yanagihara, K.; Sheinin, M.; Macias, V.; Alani, F.; Feferman, L.; Kajdacsy-Balla, A. A.; Tonetti, D.; Hoskins, K.; Frasor, J.; Coloff, J. L.",
   "date": "2026-09-16",
